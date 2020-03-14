@@ -1,2 +1,2 @@
 # cClass
-A place to learn C
+A place to learn C, from the papobinario channel playlist.
