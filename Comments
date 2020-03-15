@@ -1,0 +1,12 @@
+Aula 0 - Comando -file- para tentará descobrir qual é o tipo de arquivo.
+
+Caso queira que o shell procure o último comando que comece 1ue vc colocou depois do (!) e vai rodar. Por exemplo, se vc colocar;
+
+!gcc
+
+E o último comando que vc deu foi:
+
+gcc -o hello hello.c  
+
+Isso irá repetir o comando anterior do gcc. 
+
