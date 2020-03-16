@@ -10,3 +10,34 @@ gcc -o hello hello.c
 
 Isso irá repetir o comando anterior do gcc. 
 
+Aula 1 - O comando -echo $?- iŕa retornar o resultado do último comando executado. Por exemplo, se eu fizer isso no shell:
+
+echo ola
+
+E depois:
+
+echo $?
+
+Ele retornará:
+
+0
+
+Isso pq o comando anterior foi executado com sucesso.
+
+Caso eu escrevesse: 
+
+12qeq
+
+E depois:
+
+echo $?
+
+Ele retornará:
+
+127
+
+Isso pq qualquer retorno diferente de 0 quer dizer que o comando anterior executou com erro ou algum tipo de anomalia.
+
+Existe um manual no Linux, que é o Linux Programmer's Manual. Por exemplo, caso queira ir para o terceiro capítulo na página da função printf:
+
+man 3 printf
