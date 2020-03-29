@@ -41,3 +41,13 @@ Isso pq qualquer retorno diferente de 0 quer dizer que o comando anterior execut
 Existe um manual no Linux, que é o Linux Programmer's Manual. Por exemplo, caso queira ir para o terceiro capítulo na página da função printf:
 
 man 3 printf
+
+
+Aula 2 -  Outro programa que vc pode usar no Linux para compilar é o make. Com o programa makefile, vc pode compilar o seu código dizendo quais são as
+depêndencias dele. E só com o make, sem makefile. É só usar o comando:
+
+make nome_do_código_sem_a_extensão
+
+E ele procurar pelo o nome do arquivo, irá gerar um programa com o nome do arquivo em questão e irá chamar o cc(compilador padrão do sistema). 
+
+O view é um tipo de vim, só que ele entra em modo de leitura vc não consegue alterar o arquivo.

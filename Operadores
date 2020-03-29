@@ -1,0 +1,25 @@
+ Há alguns grupos e classificações de operadores:
+
+ Lembrando:
+
+ 5 + 10 
+
+ + -> operador
+
+ 1 & 10 -> operando 
+
+ E o que um operador irá fazer? Um operador irá operar o seus operandos. Pode ser um operando, dois operandos ou três operandos, um operador 
+ irá operar de alguma forma Aritmetica, lógica, Assinalado, Relacional etc os seus operandos.
+
+Há as classificações dos operadores: 
+
+    - Unary - Um operando 
+    - Binario ou Binary - >  Tem dois operandos 
+    - Ternary -  3 operandos
+
+E exsitem alguns grupos fundamentais de operadores por funções (Funções do que eles fazem, não a função/ bloco de código que):
+
+    - Operadores Aritmeticos -> Arithmetic;
+    - Operadores lógicos -> Logical;
+    - Operadores Assinalados -> Assignment;
+    - Operadores Realacionais - > Relational;

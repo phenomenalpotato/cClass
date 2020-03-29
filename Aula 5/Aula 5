@@ -1,0 +1,18 @@
+Os Arrays são variáveis também, mas onde vc vai armazenar mais de 1 valor. Então, eles colocam o espcaço declarado para uma váriavel em sequencia. 
+
+Os arrays servem principalmente para aramazenar vários valores em uma variável. O detalhe é que esses valores serão do mesmo tipo do da variável. Ou seja, se
+a variável for do tipo int os valores serão do tipo int também;  
+
+Um array pode apontar para endereços fixos de memória, enquanto um pointer pode apontar para endereços variáveis.
+
+O array também tem os seus elementos em sequencia na memória. Por exemplo, o elemento [0] será o primeiro na memória e os outros estarão em sequencia, 
+até o último.
+
+Caso, vc tente printar um valor que está em um elemento dentro de uma array que não há nenhum valor declarado nele, Ou seja, 
+onde no endereço especifico que vc apontou na memória (apontou usando o array[0] ou [10] ou [1312]), 
+ele irá acessar o endereço de memória referente ao que vc mandou acessar,e nesse endereço de memória por acaso poderá
+ter um valor 0 ou qualquer outro valor que, naquele exato momento esteja na memória, seja lá por qual motivo...
+
+Isso acontece, pq vc está fazendo uma referencia a um endereço de memória. O que acontece: quando vc, por exemplo, coloca c[5] ele vai recuperar esse endereço de memória 
+(que talvez nós nem sabemos o que é e a gente nem tratou isso)
+ 
