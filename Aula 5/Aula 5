@@ -1,4 +1,4 @@
-Os Arrays são variáveis também, mas onde vc vai armazenar mais de 1 valor. Então, eles colocam o espcaço declarado para uma váriavel em sequencia. 
+Os Arrays são variáveis também, mas onde vc vai armazenar mais de 1 valor. Então, eles colocam o espaço declarado para uma váriavel em sequencia. 
 
 Os arrays servem principalmente para aramazenar vários valores em uma variável. O detalhe é que esses valores serão do mesmo tipo do da variável. Ou seja, se
 a variável for do tipo int os valores serão do tipo int também;  
@@ -15,4 +15,6 @@ ter um valor 0 ou qualquer outro valor que, naquele exato momento esteja na mem�
 
 Isso acontece, pq vc está fazendo uma referencia a um endereço de memória. O que acontece: quando vc, por exemplo, coloca c[5] ele vai recuperar esse endereço de memória 
 (que talvez nós nem sabemos o que é e a gente nem tratou isso)
+
+
  
