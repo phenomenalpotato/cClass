@@ -1,0 +1,3 @@
+gcc -o(output) nome_que_o_programa_receberá nome_do_arquivo_em_C 
+
+O gcc espera como entrada um ou mais arquivos que tenha o código fonte em C. E como saida, com o -o de como será o nome de programa. 

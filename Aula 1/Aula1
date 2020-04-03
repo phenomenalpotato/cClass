@@ -1,0 +1,98 @@
+#include <stdio.h> no caso do comando include ele é chamado de pré processador, o que ele faz ou vai fazer é pegar um arquivo ou receber um arquivo
+como argumento que neste caso é o stdio.h. Ele vai basicamente copiar esse arquivo e colar o conteúdo dele no inicío do código. Pq isso? Nesse caso, 
+é necessário pq existe uma função não foi nós que fizemos, nós só usamos. 
+
+Que é a printf("Hello World!\n"); e essa função está exatamente declarada/ escrita para ser utilizada no arquivo stdio.h
+
+O arquivo stdio.h já está no Linux em um local padrão de arquivos .h para serem incluídos em códigos em C. Por isso não precisa específicar o caminho, 
+basta utilizar o <>
+
+O arquivo stdio.h fica em /usr/include/stdio.h e o que está em /usr/include no caso do Linux vc não precisa colocar o caminho. Ou seja, ao invés de colocar:
+
+#include <stdio.h>
+
+Vc pode colocar:
+
+#include "/usr/include/stdio.h" 
+
+Caso queira incluir outro arquivo:
+
+#include <stdio.h>
+#include "arquivo.h"
+
+Só que o detalhe é que esse arquivo deverá estar no mesmo local do arquivo que vc está editando.
+
+
+A parte do código a seguir é uma função :  
+
+int main(void) {
+
+    printf("Hello World!\n");
+    printf("papobinario.com.br\n");
+    return 0;
+}
+
+Com a parte do int main(void) vc especifica uma função. As chaves vc limita o bloco de código da função. 
+
+A função tem um modelo, e no caso do modelo acima a primeira palavra dela (nesse caso int) é o tipo de retorno da função. Função é um bloco de código que recebe 
+algum código, ela faz algum trabalho ele e retorna algo. Então, por exemplo, se exste uma função que soma números ela recebe os números a serem somados
+e ela retorna o resultado dessa soma. 
+
+E o que a função acima retorna o que? Ela retorna um int, int é uma variável do tipo inteiro, um número inteiro. 
+
+Depois vem o nome da função. O nome dessa função acima é main. Ela é a função que todo o programa em C em geral tem essa função main e é essa função que 
+vai iniciar o código/ iniciar a execução do código que o programador no programador. No nosso caso, nós colocamos o printf() e teoricamente essa 
+é a primeira função que o programador escreveu e que vai ser executada. 
+
+A função main é obrigatoria de uma maneira geral, e ela precisa ter esse nome main. 
+
+E logo depois do nome da função a gente abre os parenteses e ai entram os argumentos que essa função vai receber também chamados de parâmetros, ou seja o 
+que vai ser passado para essa função. 
+
+No caso da função acima foi usado a palavra Void que é um comando/ uma palavra reservada do C que diz que essa função, nesse caso, não irá receber 
+nenhum argumento. Depois disso, fecha os parenteses quando acaba a lista de argumentos. E abro o bloco para começar de fato o código da função.
+
+No caso do return 0; ela é uma função que retorna um inteiro. Então nesse caso ele retornou, nós programamos para ela retornar o valor 0. 
+
+Caso vc execute esse programa da maneira que ele está agora, o que retornará de mode visivel, na tela, será somente o retorno das funções printf.
+A função return 0, não aparecerá/ retornará na tela. Isso pq quem chama esse programa é o Sistema Operacional, e por sua vez ele chama a biblioteca 
+padrão C, e essa biblioteca padrão chama a main. E a main por sua vez, retorna para quem a chamou. Toda a função na prática retorna para quem a chamou. E 
+quem chamou na prática foi o Sistema Operacional, e logo o retorno será para esse Sistema Operacional. E para ver esse retorno no Shell do Linux, é só 
+executar o comando:
+
+echo $?
+
+Caso retorne 0, quer dizer que o programa executou com sucesso. Se foi diferente de 0, quer dizer que o comando executou com erro ou alguma anomalia.
+
+No caso do programa acima nós fizemos que o retorno da main fosse 0, mas poderiamos fazer com que fosse qualquer número. Isso pq, o programa pode retornar 
+códigos de erro. Ele pode dizer, por exemplo, se retornar 1 o programa retornou com erro e se retornar 0 foi pq retornou com sucesso. 
+
+Caso fizesse esse comando no Shell:
+
+./hello && echo o progrma executou com sucesso
+
+O Shell vai testar a saida do ./hello que foi o primeiro comando que executou e se a saida/ return dele for 0 ele vai executar o segundo comando que veio depois 
+do &&. Ou seja, basicamente, se o retorno do comando ./hello der certo (der 0) executa o comando do direita (echo). Do contrário ele não executará. 
+
+Esse retorno da main é muito utilizado para testar se um programa foi executado com sucesso ou não.
+
+Analisando a função printf, nós não definimos ela. Isso pq ela está dentro do stdio.h que nós estamos dando include, incluindo no código. Então, não
+há necessidade para definirmos ela, ela já está definida lá. Então, nós podemos chamar ela somente pelo o nome printf. 
+
+E a printf é uma função que recebe um ou mais argumentos. Para vc ver mais sobre ela:
+
+man 3 printf
+
+A função printf como está descrita no manual:
+
+int printf(const char *format, ...);
+
+Ela retorna um tipo inteiro, o primeiro parametro dela é um ponteiro para char e um nome, esse nome pode ser qualquer coisa. E no começo, 
+ele será um ponteiro constante, ou seja, ele não será alterado. O texto que vc passou para a printf será um texto inalteravel. E seguindo o que está no 
+manual, logo depois dos ... vc consegue ter mais argumentos. 
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Uma tipo de váriavel int "unsigned" consegue ter um valor zero e números postivos, e uma variável int "signed" pode ter valor 0, positivo e negativo.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
