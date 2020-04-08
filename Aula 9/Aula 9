@@ -1,0 +1,80 @@
+Basicamente um bloco em C é definido em chaves {}. 
+
+Estrutura do if em C:
+
+if (1) <- É verdadeiro 
+{
+
+    int chave = 3/
+    printf("chave: %d", chave);
+
+}
+
+Para impedir que insira bugs no programa do genero, quando for fazer uma comparação lógica do tipo:
+
+ a == 12;
+
+ e sem querer acabar por atribuir 12 para aquela variável:
+
+ a = 12;
+
+ Você pode fazer:
+
+ 12 == a;
+
+Que vai dar a mesma coisa que a == 12;
+
+E caso, vc faça:
+
+12 = a; 
+
+Ele vai dar errado;
+
+Vc pode fazer um if{} sem blocos{} :
+
+Ao inves de:
+
+if (a == 12){
+
+    int a = 13;
+
+    printf("%d\n", a);
+
+}
+
+Vc pode fazer:
+
+if(a == 6)
+    printf("%d\n", a);
+
+O problema com o if sem estar em bloco, é que ele só executará um comando.
+
+No caso do else, vc tambem pode spo executar um comando sem ele estar em um bloco:
+
+else printf("A avaliação do if() deu FALSO!\n");
+
+Isso pq, o bloco{} transforma realmente um comando, vários comandos em um bloco de comando. 
+
+A indentação de um código em C é mais para o programador, do que para o programa em sí.
+
+A diferença principal entre a função printf() e a função puts(), é que a função puts não suporta formatação. Por exemplo:
+
+puts("%d") <- ela não irá suportar o %d e ela também irá colocar o \n no final.
+
+
+Avaliação Ternária:
+
+Ao inves de fazer:
+
+if (a == 3)
+    puts("a é igual a 3")
+else 
+    puts("Não sei o valor de a");
+
+Vc pode usar uma avaliação tenrnária, e representar o if e else acima dessa maneira:
+
+(a == 3) ? puts ("a é igual a 3") : puts("Não sei qual o valor de a");
+
+: -> else
+
+
