@@ -56,3 +56,5 @@ O view é um tipo de vim, só que ele entra em modo de leitura vc não consegue 
 ping -c1 uol.com.br && ping -c1 mentebinaria.com.br -> Neste exemplo, o segundo comando só será executado se o primeiro der certo.
 
 ping -c1 uol.com.br || ping -c1 mentebinaria.com.br -> O segundo comando só será executado caso o primeiro comando não tenha sido executado.
+
+O strace é uma ferramenta que monitora as chamadas de sistema (system calls) e os sinais recebidos pela apliacação.
