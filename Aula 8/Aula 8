@@ -1,0 +1,78 @@
+Uma operação bit-a-bit considera cada bit. Por exemplo, 
+
+int a = 2; 
+
+int b = 3;
+
+printf("%d\n", a & b);
+
+O 2 em binário é 10;
+
+O 3 em binário 11;
+
+Quando formos fazer a operação Logica AND entre esses dois valores bit-a-bit, temos que levar em consideração cada bit que eles possuem.
+
+Então:
+
+        10
+        11
+        ^^
+        10
+
+Analisando a tabela verdade do AND: 1 - 1 = 1 
+                                    0 - 1 = 0 
+                                            ^ 
+                                            10
+
+O que será printado na tela é: 2 // Qualquer coisa diferente de zero É VERDADE 
+
+No caso do operador lógico OU, nós analisamos a de forma diferente. Por exemplo,
+
+int a = 2; // Em binário -> 10
+
+int b = 3; // Em binário -> 11
+
+printf("%d\n", a | b):
+
+Analisando a tabela verdade com o OU: 1 - 1 = 1    
+                                      0 - 1 = 1
+                                              ^
+                                              11
+
+No caso, do OU uma só das condições tem que ser verdadeira. Nessa caso, foi realmente o que aconteceu. Principalmente, analisando os últimos dois bits (0 - 1). 
+0 (Falso) OU 1 (Verdadeiro), sendo uma das condições analisadas verdadeiras, acabou pelo o resultado como verdadeira.
+
+O operador bit-a-bit XOR existe somente nos operadores bit-a-bit. A saida dele só vai dar verdadeiro se somente um bit seja 1 (VERDADE). Por exemplo:
+
+int a = 2; // 10
+
+int b = 3; // 11
+
+Analisando a tabela verdade com o XOR: 1 - 1 = 0 <- Dois bits 1, por isso vai dar 0
+                                       1 - 0 = 1 <- Somente 1 bit é 1, por isso vai dar 1
+                                               ^
+                                               01
+
+Se vc fizer um XOR de dois números iguais o resultado será sempre 0 (Falso).
+
+Usando o Operador Shift Left (<<), irá acontecer que os bits serão movidos para a esquerda. 
+E no caso do Operador Shift Right (>>), os bits serão movidos para a direita.
+
+Vc pode escolher quantos 0 serão adicionados na operação. Por exemplo:
+
+int a 0b1000; // <- 8
+
+printf("%d\n", a << 1) 
+
+O que acontecerá, é que os bits serão movidos todos para a esquerda e será também adicionado um 0 no final a esquerda dele. E ficará agora: 
+
+a = 0b10000 // <- 16
+
+Essa correlação de após fazer a operação Shift Left, e de 8 ir para 16. Significa que quando eu for usar a operação Shift Left eu vou estar dobrando o valor. 
+A próxima vez, caso, eu faça:
+
+printf("%d\n", a << 2);
+
+a = 32 // a, Será 32. Pq nesse caso, a base será 2. 
+
+E da mesma maneira, caso eu use o Shift Right, eu estarei dividindo por 2.

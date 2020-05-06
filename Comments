@@ -51,3 +51,10 @@ make nome_do_código_sem_a_extensão
 E ele procurar pelo o nome do arquivo, irá gerar um programa com o nome do arquivo em questão e irá chamar o cc(compilador padrão do sistema). 
 
 O view é um tipo de vim, só que ele entra em modo de leitura vc não consegue alterar o arquivo.
+
+
+ping -c1 uol.com.br && ping -c1 mentebinaria.com.br -> Neste exemplo, o segundo comando só será executado se o primeiro der certo.
+
+ping -c1 uol.com.br || ping -c1 mentebinaria.com.br -> O segundo comando só será executado caso o primeiro comando não tenha sido executado.
+
+O strace é uma ferramenta que monitora as chamadas de sistema (system calls) e os sinais recebidos pela apliacação.

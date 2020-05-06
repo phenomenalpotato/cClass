@@ -1,0 +1,63 @@
+Uma das formas de poder repetir uma parte de um código, seria usando Label. Um label basicamente é como se fosse um rótulo, ele vai estar rotulado.
+Ela não mais tanto utilizada em C. 
+
+Primeiro você tem que declar o label:
+
+teste: // <- Label 
+    
+    puts("Um teste para repetição usando Label");
+
+    if (i < 4)
+        goto teste;
+
+Estrutura do for( ; ; ) {
+                 
+    }
+
+for ( ; ; )
+     ^ 
+     O que tiver aqui só vai rodar uma vez
+
+for ( ; ; )
+       ^
+       Aqui será onde vc vai colocar uma comparação
+
+for(; ; )
+       ^
+       Aqui será o incremento
+
+Primeiro é executado a inicialização da variável, depois a comparação, depois o bloco de código e por último o incremento.
+
+Caso eu queira posso fazer algo assim:
+
+unsigned int i = 0;
+
+for ( ; ;) {
+
+    puts("Teste!");
+
+    ++i;
+
+    if (i > 2) {
+
+        break; // Se if() for maior que 2 eu saio
+
+    }
+
+    else{
+
+        continue; // Para continuar a execução 
+    }
+
+}
+
+Qual a diferença entre o for() e o while():
+
+
+A Estrutura dos dois é maior diferença entre eles. Por exemplo:
+
+for(unsigned int i = 0; i < 3; i++)
+
+while(i < 3)
+
+Ao usar o do while, tem que ficar esperto por que o bloco de código sempre irá executar pelo menos uma vez.

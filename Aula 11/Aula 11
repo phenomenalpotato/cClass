@@ -1,0 +1,15 @@
+Caso queira pegar o valor que está em algum endereço de memória:
+
+int a[] = {2019, 213, 321};
+
+printf("%d\n", *a);
+
+Um ponteiro é uma variável que aponta para alguma coisa.
+
+O que é uma cstring? É um ponteiro de char ou um Array de char terminado em nulo.
+
+Qual a diferença entre *ponteiro e ponteiro:
+
+*ponteiro = Acessando o valor\ lendo o dado daquele endereço de memória;
+
+ponteiro = Dessa maneira vai estar acessando o endereço de memória;
