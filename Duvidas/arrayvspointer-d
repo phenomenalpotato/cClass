@@ -1,0 +1,40 @@
+Quando faço: 
+
+char *pointer = "abc" o ponteiro estará apontando para o endereço de memória da string "abc" (Na qual pode ser armazenada em read-only e com isso
+não é mutável, dessa maneira caso nós queremos mudar algum desses elementos, por exemplo, 'b' isso será impossível)
+
+E no caso de:
+
+char array[] = "abc" ele coloca em quatro elementos 'a', 'b', 'c' e '\0' 
+
+E também, quando faço isso:
+
+int a[5] = {1,2,3,4,5};
+
+int *p = a; // Estou passando o endereço do primeiro elemento do Array a para o ponteiro.
+
+Quando um programa é executado, o computador reserva uma parte da memória para esse programa. E nessa divisão é feita em 4 partes: 
+
+    - Heap; 
+    - Stack = Aqui é onde todas as Varáveis Globais vão/ ficam;
+    - Static/ Global = Onde Varáveis Globais ou Locais ficam;
+    - Code (Text) = São as intruções do programa;
+
+
+
+Em alguns contextos Array names são convertidos para ponteiros.
+
+Observação:
+
+- char *argv[] // É um array de ponteiros que vão apontar para char;
+    - Por exemplo:
+        char *argv[]
+
+- char (*argv)[] // É um ponteiro para/ que vai apontar para um array de chars;
+    - Por exemplo:
+        int a[5] = {1,2,3,4,5};
+
+        int (*p)[5]; // Um ponteiro que está apontando para um Array de char de 5 elementos;
+
+
+- char **argv // É um ponteiro que aponta para um ponteiro que apontará para um ponteiro de char;

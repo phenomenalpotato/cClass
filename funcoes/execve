@@ -1,0 +1,9 @@
+Ele irá executar o binário que foi passado para ele e tambem passará pra esse mesmo binario/ programa os argumento que foram digitados logo depois
+que o programa foi chamado.
+
+Por exemplo:
+
+./main primeiro segundo
+
+./main será o nome do programa que será executado. E ./main (como esse programa foi chamado), primeiro e segundo
+Serão um dos argumentos passado para o mesmo ./main (programa)
