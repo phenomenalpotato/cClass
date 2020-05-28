@@ -1,0 +1,13 @@
+Se eu não sei qual é o tamanho de uma variável eu vou ter que fazer uma Alocação Dinamica de Memória. E a Alocação Dinamica é uma técnica que todo o programa 
+utiliza ela, mesmo que você não veja. Toda vez que você pede para o Kernel para alocar Memória, você precisa dizer quanto de memória você quer. Por exemplo, 
+e se durante a execução do programa seja aberto um arquivo que seja maior do que você tinha alocado? Para isso você utiliza a Alocação de Memória Dinamica 
+para alocar memória enquanto programa roda. 
+
+Para isso, existem algumas funções:
+    - A mais famosa delas é a malloc. Ela irá retonar um ponteiro para a Memória que foi alocada. Basicamente, ela irá alocar um espaço em memória do size que 
+    foi pasado para ela. E depois, irá voltar para o programa um ponteiro com o endereço para aquela memória. 
+    - realloc: Ela irá mudar o tamanho de uma memória já alocada. Ela irá precisar receber um ponteiro e um novo tamanho;
+    - calloc: Ela além de alocar memória, ela irá incializar;
+
+Toda a memória depois de alocada deve ser desalocada/ liberada. E fazemos isso ao utilizar outra função, chamda de:
+    - free: Ele irá liberar essa memória alocada;
