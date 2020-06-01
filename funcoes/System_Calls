@@ -1,0 +1,28 @@
+System calls provêm uma interface para um serviço disponivel pelo o Sistema Operacional. 
+
+User e Kernel Mode, são dois modos que um programa pode ser excutado.
+
+User Mode: Se um programa é executado em User Mode, ele não terá acesso direto a memória, hardware e esses tipos de recursos. A maioria dos 
+programas são executaods em User Mode. Se um programa que está 
+sendo executado em User Mode travar, o sistema não iria travar ou o sistema por inteiro não iria parar, como aconteceria caso esse mesmo programa 
+estivesse sendo executado em Kernel Mode. 
+
+Kernel Mode: Se um programa é executado em Kernel Mode, ele terá acesso direto a memória, hardware e esses tipos de recursos. Então, nós falamos, que se, 
+programa está sendo executado em Kernel Mode, então, está em Modo Privilegiado (Priveleged Mode). Pois, está tendo acesso direto a muitos recursos. Mas, o problema
+quando um programa está sendo executado em Kernel Mode e aquele programa acontecer de travar (crash) durante a sua execução, então o sistema todo iria travar
+ou o seu sistema por inteiro iria parar. 
+
+Quando um programa é executado em User Mode, pode ser que ele precise de algum recurso. Como a memória, por isso, quando ele precisa de acesso a esses recursos, 
+ele irá fazer uma Chamada de Sistema (System Call) para o seu Sistema Operacional pedindo acesso a certos recursos. Então, ele fará essa chamada e quando 
+ele faz essa chamada, o que acontece é que por um instante o programa troca de User Mode para Kernel Mode para que possa utilizar aqueles recurasos. 
+E essa troca é conhecida como Mode Shifting. A chamada que o programa faz para acessar esses recursos ou para ir para Kernel Mode, essa chamada é a 
+System Call. System Calls, são feitas pelos programas quando necessitam acessar certos recursos. Então, quando um programa executando em User Mode 
+precisa trocar para Kernel Mode por um determindado periodo de tempo, essa chamada de sistema ocorre. 
+
+System Call é a maneira programatica na qual um programa pede um serviço do Kernel do Sistema Operacional. Um serviço pode ser qualquer coisa, como, 
+acessar recursos.
+
+E essas rotinas, são geralmente disponiveis e escritas em C & C++
+
+Mesmo para um programa simples existe várias chamadas de sistema. Mantenha em mente que há milhares de chamadas de sistema acontecendo por segundo
+durante a execução de certos programas no sistema. 

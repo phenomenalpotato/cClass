@@ -13,3 +13,54 @@ Qual a diferença entre *ponteiro e ponteiro:
 *ponteiro = Acessando o valor\ lendo o dado daquele endereço de memória;
 
 ponteiro = Dessa maneira vai estar acessando o endereço de memória;
+
+No caso de um Array, caso eu queira pegar o dado que tem ali eu posso fazer da seguinte forma:
+
+int a[] = {9, 12, 65};
+
+printf("%d\n", *a); <- Nesse caso, ele irá pegar o primeiro elemento do Array = 9
+
+Caso eu queira pegar o próximo elemento do Array:
+
+printf("%d\n", *(a+1));
+
+Quando nós chamamos um programa dessa maneira ./programa duas coisas são passadas pelo o Linux. 
+
+Quando executamos um binário no Linux a função execve é chamada por parte do Linux para executar o binário. A execve, pode receber dois argumentos. 
+Um, o próprio binario e outro é um array de strings.
+
+Para recuperar um endereço em memória: &nome_da_variavel
+
+Caso eu faça: 
+
+int *j = NULL; // Inicialiazando um ponteiro que não tem conteudo/ não está apontando para nenhum lugar
+
+*j = 9;
+
+printf("j: %d\n", *j);
+
+Irá dar erro. Pois, eu estou indo até onde o ponteiro está apontando (que é NULL/ lugar nenhum) e indo tentar pegar um valor em um lugar nulo
+
+Eu precisaria fazer
+
+int j; 
+
+int *p = &j;
+
+*p = 9;
+
+printf("j: %d\n", j);
+
+O conteúdo de um ponteiro sempre estará apontado para um endereço de memória, mesmo quando ele é Inicialiazado e não é declarado nada para ele.
+Para evitar isso, deve-se inicializar o ponteiro como NULL para ele ter em seu conteúdo nada, nenhum endereço de memória. Ou já quando declarar ele, já inicializar
+ele com algum valor.
+
+Usando Strings e Pointers: Quando um valor de String é passado para um ponteiro, na maioria dos compiladores, ela é guardada em uma memória Read-Only
+que é compartilhada através de outras funções.
+
+Por exemplo:
+
+char *ptr = "teste";
+
+Na linha de cima "teste" é armazenada em uma loacalização Read-Only, mas o ponteiro ptr será aramazenado em uma memória Read-Write. Você pode mudar
+ptr para apontar para outra coisa, mas não poderá mudar o valor da String.

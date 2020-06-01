@@ -1,0 +1,10 @@
+Funções como MACROS:
+    - Você também pode definir MACROS como se funcionassem iguais chamadas de funções. Isso é conhecido como functions-like MACROS. Por exemplo:
+
+#define CircleArea(r) (3.1415 * (r)*(r))
+
+Toda a vez que o programa encontrar CircleArea(argumento), irá ser substituido por (3.1415*(argumento)*(argumento))
+
+Suponhamos que passamos 5 como argumento, então ela será expandido dessa maneira: 
+
+    CircleArea(5) Irá ser expandido para (3.1415 * (5)*(5))

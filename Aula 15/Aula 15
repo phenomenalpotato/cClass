@@ -1,0 +1,11 @@
+Protótipo de uma função:
+    1 - Tipo de retorno dela;
+    2 - Nome dela;
+    3 - Tipo do Argumento/ parametro;
+    4 - Nome do Argumento; 
+    5 - Tipo do 2º Argumento;
+    6 - Nome do 2º Argumento;
+
+Argumento é o que uma função recebe para fazer alguma coisa, e retorno é o que ela retorna;
+
+As funções tem endereço;
