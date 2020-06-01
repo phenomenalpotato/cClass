@@ -11,3 +11,16 @@ Para isso, existem algumas funções:
 
 Toda a memória depois de alocada deve ser desalocada/ liberada. E fazemos isso ao utilizar outra função, chamda de:
     - free: Ele irá liberar essa memória alocada;
+
+
+size_t é um tipo de dado integral unsigned, na qual é definido em vários Headers.
+
+É um tipo na qual é usado para representar o tamanho do objeto em bytes e por isso é usado como tipo de retorno para o operador sizeof(). É garantido de ter 
+grande o suficiente para conter o tamanho dos maiores objetos que o sistema host consegue aguentar, Basicamente, o tamanho máximo permitido é dependente do
+compilador; se um compilador é de 32 bits então é simplesmente um typedef (i.e., alias) para unsigned int, mas se o compilador for de 64 bits, então, será 
+do tipo typedef para unsigned long long. O tipo de dado size_t nunca será negativo.   
+
+Muitos library functions como malloc, memcpy e strien declaram os seus argumentos e retornos como size_t.
+
+Quando usamos o objeto size_t, nós temos que ter certeza que em todos os contextos que é usado, incluindo aritmeticamente, nós só queremos valores 
+não-negativos. 

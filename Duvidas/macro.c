@@ -20,10 +20,15 @@
 #include <stdio.h>
 
 #define integer int
+#define STR(str) printf("%s\n", str);
 
-int main(void) {
+integer main(void) {
 
 integer var = 9;
+
+    char exemplo[] = {"Olá, seja bem-vindo!!"};
+
+    STR(exemplo)
 
     printf("%d\n", var);
 

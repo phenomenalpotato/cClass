@@ -1,0 +1,44 @@
+O que é uma Estrutura? 
+
+    - Basicamente, uma structure cria um data type que pode ser usado para agrupar itens possivelmente de outros tipos em um único tipo. 
+    - É uma coleção de variáveis(pode ser diferentes tipos) sobe um mesmo nome.
+    - Imagine que você queira criar um novo tipo de variável, é claro que os tipos base de variáveis não poderão ser desrespeitadas, serão todas 
+    um tipo de variação delas. Usamos uma Estrutura normalmente quando tem mais de uma coisa dentro, mais de um tipo de variável primitivo. 
+    - Ou suponha que você queira armazenar informações sobre uma pessoa: o nome dela/ dele, cidadania e salario. Você pode criar diferentes variaveis
+    nome, cit e salario para armazenar essas informações. Mas e caso você queira armazenar informações de mais de uma pessoa? Agora teria que criar diferentes 
+    variaveis para cada informação por pessoa: nome2, cti2, salario2, nome3, cit3, salario3 etc. Uma melhor abordagem seria ter uma coleção de todas
+    as informações sobe um único nome Pessoa structure e usar ela para todas as informações. 
+    
+
+Caso eu faça algo como:
+
+memset(&s, 1, sizeof(struct st));
+
+o que o memset irá fazer é, ele irá preencher toda essa área de memória por 1.
+
+Ao contrário do que acontece com o tamanho de uma Struct que vai ter um tamanho da junção dos tipos primitivos, mas que seja um múltiplo de 2. por exemplo:
+
+struct st {
+
+    unsigned char id;
+    unsigned int num;
+
+};
+
+Essa estrutura deveria ter um tamanho total de int = 4 bytes + char 1 byte = 5 bytes.
+
+Mas nesse caso ele terá um valor real de 8 bytes, pois o tamanho de uma struct tem que ser um múltiplo de 2.
+
+E no caso de uma Union, ele terá um tamanho real total do maior valor/ tamanho do tipo primitivo que tem nele, por exemplo:
+
+union st {
+
+    unsigned char id;
+    unsigned int num;
+
+};
+
+Nesse caso essa Union terá ter um tamanho real total de 4 bytes, pois o int num tem 4 bytes.
+
+No caso de uma Union também ela irá compartilhar os bytes. Por isso, vc só pode usar ou o char id ou int num. Vc não pode usar os dois ao mesmo tempo no programa.
+Ou vc usa o 1 byte do char id ou vc usa os 4 bytes do int num.

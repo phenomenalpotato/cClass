@@ -58,3 +58,15 @@ ping -c1 uol.com.br && ping -c1 mentebinaria.com.br -> Neste exemplo, o segundo 
 ping -c1 uol.com.br || ping -c1 mentebinaria.com.br -> O segundo comando só será executado caso o primeiro comando não tenha sido executado.
 
 O strace é uma ferramenta que monitora as chamadas de sistema (system calls) e os sinais recebidos pela apliacação.
+
+Para usar uma saida de erro de um programa no terminal:
+
+comando nome-do-programa 2> nome-de-onde-quer-jogar-a-menssagem-de-erro-caso-tenha-um
+
+Por exemplo:
+
+ping www.ggle.net 2> Documentos/error.log
+
+O ping nesse caso daria erro e com isso jogaria somente a menssagem de erro no arquivo error.log.
+
+Caso existe uma outra menssagem alem do erro, somente a menssagem de erro irá ir para esse arquivo error.log, uma outra menssagem iria aparecer na tela normalmente.

@@ -17,7 +17,7 @@ Há as classificações dos operadores:
     - Binario ou Binary - >  Tem dois operandos 
     - Ternary -  3 operandos
 
-E exsitem alguns grupos fundamentais de operadores por funções (Funções do que eles fazem, não a função/ bloco de código que):
+E existem alguns grupos fundamentais de operadores por funções (Funções do que eles fazem, não a função/ bloco de código que):
 
     - Operadores Aritmeticos -> Arithmetic;
     - Operadores lógicos -> Logical;

@@ -83,7 +83,7 @@ p = realloc(p, sizeof(int) * 6); // Realocando um espaço de memória usando a f
     // Tenha certeza de após usar essa memória liberar ela, pois, você só precisa liberar ela uma vez. Você na faŕa, por exemplo: 
                                                                                                                 // free(p);
                                                                                                                 // free(p);
-    // Você irá liberar somente uma vezo free(p); essa memória depois de utilizar ela.
+    // Você irá liberar somente uma vez o free(p); essa memória depois de utilizar ela.
 
     return 0;
 }
