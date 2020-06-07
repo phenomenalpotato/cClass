@@ -4,3 +4,5 @@ for de uma determinada arquitetura X eu consigo ao usar Conditional Compilation 
 void *malloc_s
 
 Alocação Dinamica de Memória
+
+specifiers de classe de armazenamento

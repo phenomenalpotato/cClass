@@ -59,6 +59,8 @@ ping -c1 uol.com.br || ping -c1 mentebinaria.com.br -> O segundo comando só ser
 
 O strace é uma ferramenta que monitora as chamadas de sistema (system calls) e os sinais recebidos pela apliacação.
 
+Aula 16
+
 Para usar uma saida de erro de um programa no terminal:
 
 comando nome-do-programa 2> nome-de-onde-quer-jogar-a-menssagem-de-erro-caso-tenha-um
@@ -70,3 +72,9 @@ ping www.ggle.net 2> Documentos/error.log
 O ping nesse caso daria erro e com isso jogaria somente a menssagem de erro no arquivo error.log.
 
 Caso existe uma outra menssagem alem do erro, somente a menssagem de erro irá ir para esse arquivo error.log, uma outra menssagem iria aparecer na tela normalmente.
+
+Aula 17
+
+Para compilar mais de um arquivo .c no GCC:
+
+gcc -o nome_do_output_do_programa nome_do_primeiro_arquivo nome_do_segundo_arquivo
