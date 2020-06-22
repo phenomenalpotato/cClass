@@ -14,7 +14,7 @@ int main(void) {
 
     unsigned char ccc;
 
-    /* Operador sizeof que vai conseguir dizer o tamnho da variável c. %lu quer dizer long and unsigned, até poderia-se usar o %d, nesse caso, pq o tamanho 
+    /* Operador sizeof que vai conseguir dizer o tamanho da variável c. %lu quer dizer long and unsigned, até poderia-se usar o %d, nesse caso, pq o tamanho 
     irá coincidir para fazer a troca do valor da operação que ocorrerá com o sizeof c. Mas, com outra variável o valor poderia ser substituido errado. Pois, o 
     valor pode ser muito grande e %d pode não conseguir imprimir. */
 

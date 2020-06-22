@@ -5,7 +5,7 @@
 
 int main(void) {
 
-    /* Iniciando uma variável, dando o número máximo que pode ser colocado dentro de um inteiro com o INT_MAX. Nesse caso dessa variável, o valor que será impresso
+    /* Iniciando uma variável, dando o número máximo que pode ser colocado dentro de um inteiro com o INT_MAX. No caso dessa variável, o valor que será impresso
     não será o maior valor que essa variável consegue ter, pois, essa variável está como signed. Ou seja, metade do tamanho dela está reservada para números
     positiovos e negativos. */
 
@@ -21,9 +21,9 @@ int main(void) {
 
     /* Fazendo que a variável do tipo int tenha metade do seu tamanho. É a mesma coisa que fazer uint16_t para definir o tamanho da variável em 16 bits.  */
 
-    short int iiiii;  // Posso fazer também somente, ao invés de short int iiiii; Fazer short iiiii; Que é a mesma coisa, isso pq o short já está implicito ele 
-                      // Ao int, ele só serve para int mesmo  
-    long int iiiiii = LONG_MAX; // Também posso fazer somente long iiiiii; Essa variável apartir de agora terá tamnho de 64 bits
+    short int iiiii;  // Posso fazer também somente, ao invés de short int iiiii; Fazer short iiiii; Que é a mesma coisa, isso pq o short já está implicito nele 
+                      // o int, ele só serve para int mesmo  
+    long int iiiiii = LONG_MAX; // Também posso fazer somente long iiiiii; Essa variável apartir de agora terá tamanho de 64 bits
 
     size_t iiiiiii; // Ele é exatamente o tipo de retorno do sizeof. Ele é um tipo unsigned int, e também depende da arquitetura 
 
@@ -40,7 +40,7 @@ int main(void) {
     printf("O valor máximo de i: %i\n", i);
 
     /* Caso, nós usemos o %d ou %i que são formatadores para imprimir signed e se usarmos eles para imprimir um valor do tipo unsigned irá dar outro valor que 
-    não é o certo. E isso, é um erro de lógica.  */
+    não é o certo. E isso, é um erro de lógica. */
 
     printf("O Valor de ii, valor máximo de uma variável do tipo int unsigned: %u\n", ii);
 

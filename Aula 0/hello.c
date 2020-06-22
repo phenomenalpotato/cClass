@@ -4,7 +4,7 @@
 
 int main(void) {
 
-    /* Iniciando a variável ret para aramzenar o retorno da função printf() */
+    /* Iniciando a variável ret para armazenar o retorno da função printf() */
     int ret = 0;
     int ret1 = 0;
 

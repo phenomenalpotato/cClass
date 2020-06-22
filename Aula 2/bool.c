@@ -10,7 +10,7 @@ int main(void) {
 
     bool b;
 
-    /* O tipo de variável bool foi introduzido depois. Quando ela não exitia as pessoas usavam o char, pois, ela tinha o mesmo tamanho de bool */ 
+    /* O tipo de variável bool foi introduzido depois. Quando ela não existia as pessoas usavam o char, pois, ela tinha o mesmo tamanho de bool */ 
 
     char c;
 

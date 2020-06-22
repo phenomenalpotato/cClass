@@ -18,12 +18,12 @@ int main(void) {
     c[0] = 'A';
     c[1] = 0x42;
     c[2] = 67;
-    //c[3] = 68;
+    // c[7] = 68;
 
     printf("O elemento 0 de c é: %c\n", c [0]);
     printf("O elemento 1 de c é: %c\n", c [1]);
     printf("O elemento 2 de c é: %c\n", c [2]);
-    //printf("O elemento 3 de c é: %d\n", c [3]);
+    // printf("O elemento 3 de c é cara: %d\n", c [7]);
 
     printf("O endereço do array c em memória é: %p\n", c); // %p de pointer 
     printf("O endereço do array &c em memória é: %p\n", &c); // & é um operador que irá pegar o endereço de c

@@ -21,7 +21,7 @@ int main(void){
 
     /* Escrevendo um número real na tela usando o %f */
 
-    printf("Essa é uma conversão para Real: %f %f\n", 4.8, 11.1 );
+    printf("Essa é uma conversão para Real: %f %f\n", 4.8, 11.1);
 
     /* Escrevendo uma letra na tela usando o %c */
 
@@ -30,5 +30,7 @@ int main(void){
     /* Escrevendo um texto usando o %s */
 
     printf("Isso é um texto: %s\n", "Isso é um texto!!!!");
+
+    return 0;
 
 }
