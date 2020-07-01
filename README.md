@@ -13,4 +13,4 @@ As I continue to learn, I will add some more references!
 
 This project is just a way to centralize all my notes and references! In any kind of way, i am trying with this project to teach someone else. But if you came here for some mysterious reason, I hope this reference material will help you! 
 
-Yes, the description is in English and the project is in Portuguese... This is life!!
+Yes, the description is in English and the project is in Portuguese... That's life!!
