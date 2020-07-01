@@ -17,13 +17,14 @@ Parâmetros:
     - Existem 2 maneiras de passar valor através dos parâmetros: Por valor ou por referência. Nesse momento, será apresentado a passagem de parâmetro por valor.
     - Os nomes dos parâmetros na chamada recebendo não tem relação com os nomes dos parâmetros na definição da função; 
 
-Funções como MACROS:
-    - Você também pode definir MACROS como se funcionassem iguais chamadas de funções. Isso é conhecido como functions-like MACROS. Por exemplo:
+Protótipo de uma função:
+    1 - Tipo de retorno dela;
+    2 - Nome dela;
+    3 - Tipo do Argumento/ parametro;
+    4 - Nome do Argumento; 
+    5 - Tipo do 2º Argumento;
+    6 - Nome do 2º Argumento;
 
-#define CircleArea(r) (3.1415 * (r)*(r))
+Argumento é o que uma função recebe para fazer alguma coisa, e retorno é o que ela retorna;
 
-Toda a vez que o programa encontrar CircleArea(argumento), irá ser substituido por (3.1415*(argumento)*(argumento))
-
-Suponhamos que passamos 5 como argumento, então ela será expandido dessa maneira: 
-
-    CircleArea(5) Irá ser expandido para (3.1415 * (5)*(5))
+As funções tem endereço;

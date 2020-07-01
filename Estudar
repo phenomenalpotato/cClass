@@ -1,6 +1,3 @@
-Consigo usar Conditional Compilation para testar se uma determinada função irá executar ou não se atender a uma condição. Por exemplo, se o sistema 
-for de uma determinada arquitetura X eu consigo ao usar Conditional Compilation fazer que uma função não execute ou só funciona para MACROS?   
-
 void *malloc_s
 
 Alocação Dinamica de Memória
