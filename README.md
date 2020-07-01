@@ -2,7 +2,7 @@
 A place to learn C! 
 
 The following sources were used to learn:
-  - Papobinario channel playlist: https://www.youtube.com/watch?v=oZeezrNHxVo&list=PLIfZMtpPYFP5qaS2RFQxcNVkmJLGQwyKE
+  - Papobinario channel C playlist: https://www.youtube.com/watch?v=oZeezrNHxVo&list=PLIfZMtpPYFP5qaS2RFQxcNVkmJLGQwyKE
   - The C Programming Language Book.
   
  For some questions and answers, these sites helped me a loooot:
