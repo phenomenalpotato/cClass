@@ -6,7 +6,7 @@ int main(void) {
         =   Atribuição;
         + - Operadores Unarios (a = +10);
         * / Multiplicação e Divisão;
-        = - Operadores BInarios (a = 1 + 1);
+        = - Operadores Binarios (a = 1 + 1);
         %   Resto de Divisão;
         ++  Incremento;
         --  Decremento;  
@@ -24,7 +24,7 @@ int main(void) {
 
     int e;
 
-    a = 10; // Mesma coisa que fazer a = + 10; para falar que o 10 é positivo.
+    a = 10; // Mesma coisa que fazer a = +10; para falar que o 10 é positivo.
 
     b = 10 / 3.0f;
 
@@ -40,7 +40,7 @@ int main(void) {
 
     printf("Divisão de b (float): %f\n", ++b);
 
-    c = c + 1; // Ou vc pode fazer tambem que vai a mesma coisa para incrementar: c += 1 ou c++ que vai dar na mesma;
+    c = c + 1; // Ou você pode fazer tambem que vai a mesma coisa para incrementar: c += 1 ou c++ que vai dar na mesma;
 
     c += 8; // Também pode c *= 10 para multiplicar;
 

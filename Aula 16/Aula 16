@@ -1,3 +1,22 @@
+Uma função pode ser vista como um conjunto de comandos que realiza uma tarefa especifica. Em outras palavras, pode-se dizer que é um pequeno "programa" utilizado 
+por outros programas;
+
+A utilização de funções, muito comum na programação estruturada, visa subdividir um programa em partes (módulos) menores que realizam uma tarefa
+bem difinida;
+
+Beneficios:
+    - Evita que um mesmo trecho de código seja repetido várias vezes dentro de um mesmo programa, e com isso, qualquer alteração é feita apenas nesse trecho e de 
+    forma simples;
+    - Facilita a leitura do programa de maneira que os blocos de código possam ser logicamente compreendidos de forma isolada;
+
+Parâmetros:
+    - A lista de Parâmetros, também é chamada de Lista de Argumentos, é opcional. Funcionam como a interface de comunicação (passagem de valores/ dados) entre
+    o programa (chamador) e a função;
+    - Os parâmetros de uma função são definidos como se estivesse declarando uma variável, entre os parênteses do cabeçãlho da função. Caso precise declarar
+    mais de um parâmetro, basta separá-los por vírgulas;
+    - Existem 2 maneiras de passar valor através dos parâmetros: Por valor ou por referência. Nesse momento, será apresentado a passagem de parâmetro por valor.
+    - Os nomes dos parâmetros na chamada recebendo não tem relação com os nomes dos parâmetros na definição da função; 
+
 Funções como MACROS:
     - Você também pode definir MACROS como se funcionassem iguais chamadas de funções. Isso é conhecido como functions-like MACROS. Por exemplo:
 
