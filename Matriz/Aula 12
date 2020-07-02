@@ -1,0 +1,10 @@
+Matrizes são estruturas que possuem mais de uma dimensão (vetor). Diferentemente dos vetores que precisam de apenas um índice para acesso aos elementos,
+as matrizes necessitam utilizar um índice para cada dimensão.
+
+Sempre o primeiro número de uma Matriz é a linha e o segundo é a coluna.
+
+Inicializar uma Matriz:
+
+int Mat[2][5] = {{100, 90, 10, 70, 50}, {1, 43, 355, 120, 321}};
+
+Em C você pode passar arrays para funções, mas não pode retornar arrays vindo de funções.

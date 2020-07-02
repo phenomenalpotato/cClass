@@ -1,0 +1,16 @@
+No escopo global:
+    - O contrário de extern é static;
+    - O contrário de auto é volatile;
+    - O contrário de signed é unsigned;
+
+No caso de variáveis integrais, a declaração completa default é sempre:
+
+    extern auto signed TIPO var;
+
+se fizer:
+
+    int x;
+
+Ela é declarada, na verdade, como:
+
+    extern auto signed int x;

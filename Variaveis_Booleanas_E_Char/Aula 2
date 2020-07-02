@@ -1,0 +1,38 @@
+Em um programa você tem que decidir o quanto de memória você quer reservar para cada variável. Para isso, foram criadas tipos de variável. E nessa aula nós veremos
+dois tipos de variáveis, a primeira será do tipo Char e depois do tipo Bool. 
+
+Se uma variável char c; tem no seu limite 8 bits, quanto cabe dentro dessa variável? Qual o maior número que eu posso colocar nela? Qual número de 8 bits, eu 
+consigo colocar nela? O maior valor numérico que cabe nela é 255.
+
+Agora, e se eu colocasse nessa mesma váriável:
+
+char c; 
+
+c = 255; 
+
+printf("O valor de c = %i\n", c);
+
+O que aconteceria?
+
+O resultado depois de compilado, ou seja, o valor real que será mostrado será que c = -1 
+
+Pq isso? pq para representar números negativos o primeiro bit é "perdido" (ao invés de 11111111 ficará 01111111) no caso de uma representação númerica. Agora, 
+com isso eu só tenho 7 bits para representar o meu número, já que o primeiro representa o sinal. E com isso, o maior número possível é 127. 127 será 
+o maior número possível em uma representação númerica em uma variável char com sinal(signed). Se eu colocar algum número maior que 127 ele entrará nos números
+negativos, ou seja, ele quebra o tamanho da variável pela a metade e separa metade para números com sinal (negativos) e metade para números sem sinal (positivos).
+
+Agora, caso eu queira realmente uma representação númerica de 255, eu tenho que ter uma variável sem sinal. E como eu faço isso?
+
+Ao invés de fazer a variável como:
+
+signed char c;
+
+Faço:
+
+unsigned char c;
+
+O que é verdadeiro e falso na memória? Como uma variável do tipo bool funciona em memória?
+
+Se nós olharmos na <stdbool.h> você consegue ver que o próprio tipo bool define que true = 1 (é 1) e false = 0 (é 0). Ou seja, tudo isso para ficar tudo mais
+legivel/ mais "visual", mais "entendivel". E ao invés de escrevar char = 1 para demonstrar true vc pode fazer bool b; b = true é a mesma coisa.
+

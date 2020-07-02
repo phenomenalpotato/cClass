@@ -1,0 +1,36 @@
+Uma função pode ser vista como um conjunto de comandos que realiza uma tarefa especifica. Em outras palavras, pode-se dizer que é um pequeno "programa" utilizado 
+por outros programas;
+
+A utilização de funções, muito comum na programação estruturada, visa subdividir um programa em partes (módulos) menores que realizam uma tarefa
+bem difinida;
+
+Beneficios:
+    - Evita que um mesmo trecho de código seja repetido várias vezes dentro de um mesmo programa, e com isso, qualquer alteração é feita apenas nesse trecho e de 
+    forma simples;
+    - Facilita a leitura do programa de maneira que os blocos de código possam ser logicamente compreendidos de forma isolada;
+
+Parâmetros:
+    - A lista de Parâmetros, também é chamada de Lista de Argumentos, é opcional. Funcionam como a interface de comunicação (passagem de valores/ dados) entre
+    o programa (chamador) e a função;
+    - Os parâmetros de uma função são definidos como se estivesse declarando uma variável, entre os parênteses do cabeçãlho da função. Caso precise declarar
+    mais de um parâmetro, basta separá-los por vírgulas;
+    - Existem 2 maneiras de passar valor através dos parâmetros: Por valor ou por referência. Nesse momento, será apresentado a passagem de parâmetro por valor.
+    - Os nomes dos parâmetros na chamada recebendo não tem relação com os nomes dos parâmetros na definição da função; 
+
+Passagem de Parâmetros por Valor:
+    - A passagem de parâmetros que será apresentada é chamada de passagem de valor.
+    - Os valores contidos nas variáveis do programa, no momento da chamada da função, são copiados para as variáveis parâmetros da função.
+    - As alterações dos valores dos parâmetros dentro da função não afetarão os valores das variáveis do programa, usadas na chamada da função.
+    - Quando uma função não for retornar valor (procedimento), utilize void como tipo da função. Quando se usa void não podemos usar return na função.
+
+Protótipo de uma função:
+    1 - Tipo de retorno dela;
+    2 - Nome dela;
+    3 - Tipo do Argumento/ parâmetro;
+    4 - Nome do Argumento; 
+    5 - Tipo do 2º Argumento;
+    6 - Nome do 2º Argumento;
+
+Argumento é o que uma função recebe para fazer alguma coisa, e retorno é o que ela retorna;
+
+As funções tem endereço;

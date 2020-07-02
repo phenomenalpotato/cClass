@@ -1,0 +1,4 @@
+Dependendo da arquitetura de onde está sendo executado o programa, o int pode ter tamanhos diferentes. Não da para garantir o quanto cabe no Int.
+Por isso, é importante testar a variável com o operador sizeof, e as constantes UINT_MAX, INT_MAX
+
+Existe uma forma de dizer quantos bytes você quer em uma variável, usando o <stdint.h>

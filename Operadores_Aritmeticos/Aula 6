@@ -1,0 +1,21 @@
+Operador é um sinal/ um simbolo que faz alguma operação com algum número para alguma outra coisa.
+
+O operador de incremento (++ Por exemplo, a++) ele tem dois tipos, o Pós-incremento(a++) e o Pré-incremento (++a). O que acontece no caso do Pós-incremento, 
+ela (o incremento) se tiver em uma expressão, o valor dela é usado nessa expressão e depois que esse valor é incrementado. Por exemplo, se antes de uma
+expressão o valor era 10 e você quer fazer o incremento já na expressão (a++) ela aconteceria, mas provavelmente não apareceria no momento da expressão:
+
+int a = 10;
+
+printf("%d",a++);
+
+O valor que apareceria será: 10
+
+Mas a variável (a) depois do printf teria 11 pois o valor foi incrementado. Mas foi incrementado depois da chamada da printf()
+
+Para mostrar esse valor incrementado, você teria que mostrar ele com outro printf()
+
+Mas caso eu queira incrementar esse valor antes, você usaria o Pré-incremento (++a).
+
+printf("%d", ++a);
+
+O valor que aparecerá agora é 11;

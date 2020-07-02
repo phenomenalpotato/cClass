@@ -1,6 +1,0 @@
-Para ver como a tipo float fica em memória usando um debugger (gdb):
-
-gdb -1 nome_do_programa
-
-Caso vc vá trabalhar com float vc entenda a lógica por trás dele, a precisão máxima e as limitações do formato. Ele não é uma representação exata de um número
-real, isso é uma implementação que tem perdas.
