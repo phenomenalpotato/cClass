@@ -4,6 +4,7 @@ A place to learn C!
 The following sources were used to learn:
   - Papobinario channel C playlist: https://www.youtube.com/watch?v=oZeezrNHxVo&list=PLIfZMtpPYFP5qaS2RFQxcNVkmJLGQwyKE
   - The C Programming Language Book.
+  - The Neso Academy Youtube Channel: https://www.youtube.com/user/nesoacademy
 
 For some questions and answers, these sites helped me a loooot:
   - GeeksforGeeks: https://www.geeksforgeeks.org/
