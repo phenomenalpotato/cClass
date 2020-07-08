@@ -45,7 +45,7 @@ int main(void) {
 
     // printf("Soma de todos os números: %d\n", num1 + num2 + num3);
 
-    // printf("Soma de todos os números usando a função some é: %d\n", soma(num1, num2, num3));
+    // printf("Soma de todos os números usando a função soma é: %d\n", soma(num1, num2, num3));
 
     // tchau();
 

@@ -1,9 +1,12 @@
 #include <stdio.h>
 
+#define PONTO printf("-----------------------------------------------------------------\n");
+
 int gvariavelGlobal = 2; // Declarando uma variável global que pode ser visivel para outras funções. Diferente de uma variável Local que somente estará 
                    // Visivel para a função em que foi declarada. o g no começo na variável global (gvariavelGlobal) serve mais para identificar 
-                   // Que essa variável global. Mas isso não é necessário, não vai dar erro caso eu execute sem colocar ela. 
+                   // Que essa é uma variável global. Mas isso não é necessário, não vai dar erro caso eu execute sem colocar ela. 
                    // E durante a execução do código essa variável age como uma variável Estatica, em que se trata de que quando operarem ela, ela pode mudar de valor
+
 
 int main(void) {
 
@@ -12,6 +15,8 @@ int main(void) {
     void funct(void);
 
     printf("Imprimindo o valor da variável global gvariavelGlobal (int) na função main(): %d\n", gvariavelGlobal);
+
+    PONTO
 
     test();
 
@@ -33,14 +38,20 @@ void test(void) {
                                    // é que no caso da Estatica, essa variável não perde o valor dela a cada vez que a função é chamada
 
     variavelLocalEstatica = variavelLocalEstatica * 2;
-    
+
     printf("Esse é o valor da Variável Local (variavelLocalAutomatica) da função test(): %d\n", variavelLocalAutomatica);
+
+    PONTO
 
     printf("Esse é o valor da variável Local (variavelLocalEstatica) da função test(): %d\n", variavelLocalEstatica);
 
     gvariavelGlobal *= 2;
 
+    PONTO
+
     printf("Imprimindo o valor da variável global gvariavelGlobal (int) na função test(): %d\n", gvariavelGlobal);
+
+    PONTO
        
 }
 
