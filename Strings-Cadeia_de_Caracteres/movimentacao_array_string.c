@@ -1,4 +1,4 @@
-// A movimementação de valores de/ para as cadeias de caracteres nã pode ser efetuadas diretamente pelo comando de atribuição, ou pode ser efetuada pela
+// A movimementação de valores de/ para as cadeias de caracteres não pode ser efetuadas diretamente pelo comando de atribuição, ou pode ser efetuada pela
 // movimentação caracter a caracter como em vetores ou através de funções de manipulação de caracteres. Essas funções estão no header file <string.h>
 
 // Mover caracteres para uma variável string
@@ -37,8 +37,6 @@ int main(void) {
 
     strcpy(destino, origem); // Copia uma string de source para destination. char *strcpy(const char *dest, const char *src)
     printf("Com a função strcpy:\nOrigin = %s\nDestiny = %s\n", origem, destino);
-
-    // Comparação de String
 
     return 0;
 }
