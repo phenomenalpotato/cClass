@@ -32,7 +32,7 @@ int main(void) {
     printf("s.id[2]: %d\n", s.id[2]);
 
     memset(&s ,0 ,sizeof(struct st)); // Usando a função memset para zerar um espaço de memória. Primeiro passar o endereço de onde quer ir, depois o que a gente quer escrever lá?
-                     // Nesse caso queremos escrever o valor 0 lá. A quantidade de 0 seguintes nos próximos espaços.  
+                                     // Nesse caso queremos escrever o valor 0 lá. A quantidade de 0 seguintes nos próximos espaços.  
     
     PONTO
 
