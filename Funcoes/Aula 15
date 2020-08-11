@@ -34,3 +34,9 @@ Protótipo de uma função:
 Argumento é o que uma função recebe para fazer alguma coisa, e retorno é o que ela retorna;
 
 As funções tem endereço;
+
+From a function's perspective:
+
+A parameter is the variable listed inside the parentheses in the function definition.
+
+An argument is the value that is sent to the function when it is called.
