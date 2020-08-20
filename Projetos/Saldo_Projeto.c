@@ -1,10 +1,18 @@
+/* Exercicio básico de calculo do saldo dos 10 projetos*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
+// Printar uma linha pontilhada para separar e melhorar melhor a visão
+
 #define PONTO printf("----------------------------------------------------------------\n");
 
+
+// Variável global
 int i = 9;
 
+
+// Função que vai receber um caracter e retornar ele em Maiusculo
 char uppercase(char up) {
 
     if(up >= 'a' && up <= 'z') {
@@ -29,9 +37,9 @@ int main(void) {
 
     projeto proj[10];
 
-
+// Label
 loop_projeto:
-
+ 
     for(; i >= 0;) {
 
         // ++i;
@@ -88,7 +96,8 @@ loop_projeto:
                             --i;
 
                             PONTO
-
+                            
+                            // Vá para a Label loop_projeto 
                             goto loop_projeto;
                             
                     }
@@ -155,14 +164,17 @@ loop_projeto:
                             --i;
                 }
 
+
+            // Chamando a função uppercase() para converter qualquer caracter em maiuscula
             else if (uppercase(continuar) == 'N') {
-                
+
                 int *contador = NULL;
 
                 contador = &i;
 
                 *contador = i - 1;
-
+                
+                // Vá para a Label loop_projeto
                 goto loop_projeto;
 
             }
