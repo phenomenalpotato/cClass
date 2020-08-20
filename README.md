@@ -6,7 +6,6 @@ The following sources were used to learn:
   - The Neso Academy Youtube Channel: https://www.youtube.com/user/nesoacademy
   - The C Programming Language Book.
 
-
 For some questions and answers, these sites helped me a loooot:
   - GeeksforGeeks: https://www.geeksforgeeks.org/
   - Tutorialspoint: https://www.tutorialspoint.com/cprogramming/index.htm
