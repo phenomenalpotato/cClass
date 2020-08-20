@@ -17,10 +17,16 @@ Parâmetros:
     - Existem 2 maneiras de passar valor através dos parâmetros: Por valor ou por referência. Nesse momento, será apresentado a passagem de parâmetro por valor.
     - Os nomes dos parâmetros na chamada recebendo não tem relação com os nomes dos parâmetros na definição da função; 
 
+Passagem de Parâmetros por Valor:
+    - A passagem de parâmetros que será apresentada é chamada de passagem de valor.
+    - Os valores contidos nas variáveis do programa, no momento da chamada da função, são copiados para as variáveis parâmetros da função.
+    - As alterações dos valores dos parâmetros dentro da função não afetarão os valores das variáveis do programa, usadas na chamada da função.
+    - Quando uma função não for retornar valor (procedimento), utilize void como tipo da função. Quando se usa void não podemos usar return na função.
+
 Protótipo de uma função:
     1 - Tipo de retorno dela;
     2 - Nome dela;
-    3 - Tipo do Argumento/ parametro;
+    3 - Tipo do Argumento/ parâmetro;
     4 - Nome do Argumento; 
     5 - Tipo do 2º Argumento;
     6 - Nome do 2º Argumento;
@@ -28,3 +34,9 @@ Protótipo de uma função:
 Argumento é o que uma função recebe para fazer alguma coisa, e retorno é o que ela retorna;
 
 As funções tem endereço;
+
+From a function's perspective:
+
+A parameter is the variable listed inside the parentheses in the function definition.
+
+An argument is the value that is sent to the function when it is called.
