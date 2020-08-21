@@ -22,7 +22,7 @@ int main(int argc, char *argv[]) {
 
     FILE *fh;
 
-    char frase[100]; //= "Cacareco no marreco";
+    char frase[100]; // = "Cacareco no marreco";
     char *palaUser = NULL;
     
     char letra, lmaiuscula, fmaiuscula;
