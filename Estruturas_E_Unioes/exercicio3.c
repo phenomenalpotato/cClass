@@ -2,7 +2,7 @@
 
 int main(void) {
 
-    puts("Teste! Action! Go!!");
+    puts("Teste! Action! Go!! Now!!!");
 
     return 0;
 }
