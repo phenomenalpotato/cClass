@@ -29,7 +29,7 @@ int main(int argc, char *argv[]) {
 
     int cont = 0, tamanhoFrase;
 
-    fh = fopen(argv[1], "r"); // fopen é uma função que abre o arquivo. Parametros "r" da função fopen para abrir um arquivo para ler
+    fh = fopen(argv[1], "r"); // fopen é uma função que abre o arquivo. Parâmetros "r" da função fopen para abrir um arquivo para ler
 
     if (fh == NULL) {
 
