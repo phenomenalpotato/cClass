@@ -21,6 +21,8 @@ jobs:
       run: pwd && ls -lh
     - name: Go into the folder
       run: cd Estruturas_E_Unioes
+    - name: Where I am now
+      run: pwd ls -lh
     - name: Execute
       run: ./exercicio3
     - name: make
