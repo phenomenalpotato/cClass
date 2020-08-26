@@ -18,9 +18,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Where I am now
-      run: pwd
+      run: pwd && ls -lh
+    - name: Go into the folder
+      run: cd Estruturas_E_Unioes
     - name: Execute
-      run: .home/runner/work/cClass/cClass/Estruturas_E_Unioes/exercicio3
+      run: ./exercicio3
     - name: make
       run: make
     - name: make check
