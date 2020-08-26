@@ -18,7 +18,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Where I am now
-      run: ls -lha
+      run: pwd
     - name: Execute
       run: .home/runner/work/cClass/cClass/Estruturas_E_Unioes/exercicio3
     - name: make
