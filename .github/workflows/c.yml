@@ -20,7 +20,7 @@ jobs:
     - name: Where I am now
       run: pwd && ls -lh
     - name: Execute
-      run: ./Estruturas_E_Unioes/exercicio3
+      run: ./Variaveis_Inteiras/int
     - name: make
       run: make
     - name: make check
