@@ -22,14 +22,14 @@ int main(int argc, char *argv[]) {
 
     FILE *fh;
 
-    char frase[100]; //= "Cacareco no marreco";
+    char frase[100]; // = "Cacareco no marreco";
     char *palaUser = NULL;
     
     char letra, lmaiuscula, fmaiuscula;
 
     int cont = 0, tamanhoFrase;
 
-    fh = fopen(argv[1], "r"); // fopen é uma função que abre o arquivo. Parametros "r" da função fopen para abrir um arquivo para ler
+    fh = fopen(argv[1], "r"); // fopen é uma função que abre o arquivo. Parâmetros "r" da função fopen para abrir um arquivo para ler
 
     if (fh == NULL) {
 

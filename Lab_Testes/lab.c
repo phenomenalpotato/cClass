@@ -36,17 +36,27 @@
 // }
 
 
+// int main(void) {
+
+//     enum num{zero, one, two};
+
+//     printf("%d, %d, %d\n", zero, one, two);
+
+//     enum num numeros = two;
+
+//     int te = one;
+
+//     printf("%d, %d\n", numeros, te);
+
+//     return 0;
+// }
+
 int main(void) {
 
-    enum num{zero, one, two};
+for(int i = 0; i < 100; i++) {
 
-    printf("%d, %d, %d\n", zero, one, two);
+    printf("a");
 
-    enum num numeros = two;
+    }
 
-    int te = one;
-
-    printf("%d, %d\n", numeros, te);
-
-    return 0;
 }
