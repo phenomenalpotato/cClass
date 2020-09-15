@@ -61,7 +61,7 @@ int main(void) {
 
     int num;
 
-    num = 5;
+    num = 3;
 
     printf("FatR(%d) = %d\n", num, fatorialrec(num));
 
