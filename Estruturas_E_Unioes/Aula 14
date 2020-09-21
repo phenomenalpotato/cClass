@@ -7,7 +7,7 @@ O que é uma Estrutura?
     - Ou suponha que você queira armazenar informações sobre uma pessoa: o nome dela/ dele, cidadania e salario. Você pode criar diferentes variaveis
     nome, cit e salario para armazenar essas informações. Mas e caso você queira armazenar informações de mais de uma pessoa? Agora teria que criar diferentes 
     variaveis para cada informação por pessoa: nome2, cti2, salario2, nome3, cit3, salario3 etc. Uma melhor abordagem seria ter uma coleção de todas
-    as informações sobe um único nome Pessoa structure e usar ela para todas as informações. 
+    as informações sob um único nome Pessoa structure e usar ela para todas as informações.
     
 
 Caso eu faça algo como:

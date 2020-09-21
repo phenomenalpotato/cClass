@@ -1,0 +1,26 @@
+Uma cadeia de caracteres (String) é uma sequência de caracteres ou simbolos definida pelo Código ASCII.
+
+Em C, uma cadeia de caracteres pode ser tratada como um Array do tipo char, cujo o último elemento é o caractere nulo '\0', ou seja, o primeiro caractere do 
+código ASCII (cujo o valor é 0).
+
+O caractere nulo é um caractere de controle (ou seja, não exibivel) que indica o fim de uma cadeia de caracteres. Assim, uma cadeia composta de n elementos será,
+na realidade, um vetor de n + 1 elementos do tipo char.
+
+Podemos, por exemplo, representar a string "Ola, mundo!" da seguinte maneira:
+
+        'O' 'l' 'a' 'm' 'u' 'n' 'd' 'o' '!' '\0'
+
+Declaração de cadeias de caracteres: 
+
+A declaração de uma String em C é semelhante a declaração de um vetor do tipo char. O número máximo de caracteres que comportará a cadeia será igual ao número
+de elementos do array menos um (reservado para o caractere do final da cadeia), por exemplo, se definirmos uma cadeia de caracteres de 30, ela conterá 29 
+caracteres + '\0'.
+
+char Nome_da_tabela[numero_de_elementos_do_array] = "Ola mundo!";
+
+Inicialização de cadeias de caracteres:
+
+Inicialização de uma String, ou seja, mover caracteres, pode ser feita de duas maneiras:
+
+    - Mover manualmente os dados (elemento por elemento), como um array;
+    - Utilizar funções de manipulação de cadeias fornecidas pela a bibioteca padrão (string.h);

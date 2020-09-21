@@ -78,3 +78,9 @@ Aula 17
 Para compilar mais de um arquivo .c no GCC:
 
 gcc -o nome_do_output_do_programa nome_do_primeiro_arquivo nome_do_segundo_arquivo
+
+
+Falha de segmentação (imagem do núcleo gravada) -> É um tipo de erro especifico causado ao acessar memória que "não pertence a você."
+    - Quando um pedaço de código tenta fazer uma operação de leitura e escrita em um local de memória somente de leitura ou um bloco de memória livre,
+    é conhecido como Core Dump;
+    - É um erro indicando Memory Corruption; 

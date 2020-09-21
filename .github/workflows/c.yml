@@ -17,11 +17,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Where I am now
+      run: pwd && ls -lh
     - name: Execute
-      run: ./cClass/Estruturas_E_Unioes/exercicio3
-    - name: make
-      run: make
-    - name: make check
-      run: make check
-    - name: make distcheck
-      run: make distcheck
+      run: ./Variaveis_Inteiras/int 
+    # - name: make
+    #   run: make
+    # - name: make check
+    #   run: make check
+    # - name: make distcheck
+    #   run: make distcheck
+

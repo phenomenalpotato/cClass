@@ -8,7 +8,7 @@ int main(void) {
 
     printf("Digite o primeiro números: ");
 
-    scanf("%f", &a); // Função para pegar o Input do User e colocando o Dado na Variável a (float)
+    scanf("%f", &a); // Função para pegar o Input do User e colocar o dado na variável a (float)
 
     printf("Digite o segundo número: ");
 
