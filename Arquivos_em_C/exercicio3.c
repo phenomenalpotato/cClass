@@ -89,9 +89,11 @@ int main(void) {
 
     fread(&sfrase, sizeof(char), 250, fe); // Função para ler o bloco de texto do Arquivo
 
-    printf("Frase no arquivo [%s]: %s\n", pnome, sfrase);
+    printf("Frase no arquivo [%s]: %s", pnome, sfrase);
 
     free(pnome); // Liberando o espaço em memória alocada para o o ponteiro
+
+    fclose(fe);
 
     return 0;
 } 
