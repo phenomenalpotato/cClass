@@ -35,6 +35,8 @@ serão lidos */
 
     char tsaida[51];
 
+    int tam = 51;
+
     farq = fopen("arqtexto.txt", "r");
 
     fgets(tsaida, tam, farq);
