@@ -84,3 +84,6 @@ Falha de segmentação (imagem do núcleo gravada) -> É um tipo de erro especif
     - Quando um pedaço de código tenta fazer uma operação de leitura e escrita em um local de memória somente de leitura ou um bloco de memória livre,
     é conhecido como Core Dump;
     - É um erro indicando Memory Corruption; 
+
+Visual C++ para compilar programas em C e C++ em ambientes Windows;
+
