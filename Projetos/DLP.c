@@ -1,5 +1,8 @@
 /* Esse programa irá receber uma palavra e um arquivo qualquer. O mesmo irá verificar se essa palvara está no arquivo. No final, se essa palavra estiver no arquivo,
-o programa irá printar o nome do arquivo. O arquivo já deve existir! O programa deve receber um arquivo e devolver se nesse arquivo tem a palavra digitada pelo o Usuário */
+o programa irá printar o nome do arquivo. O arquivo já deve existir! O programa deve receber um arquivo e devolver se nesse arquivo tem a palavra digitada pelo o Usuário */ 
+                                                
+                                                
+                                                /* Movido para o Repositório/ projeto c-finder: https://github.com/phenomenalpotato/c-finder */
 
 #include <stdio.h>
 #include <string.h>

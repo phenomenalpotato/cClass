@@ -1,9 +1,0 @@
-This rule can help you with the following compliance standards:
-
-The Center of Internet Security AWS Foundations Benchmark
-Payment Card Industry Data Security Standard (PCI DSS)
-Health Insurance Portability and Accountability Act (HIPAA)
-General Data Protection Regulation (GDPR)
-APRA
-MAS
-National Institute of Standards and Technology (NIST)

@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <string.h>
+#include <curl/curl.h>
 
 // int main(void) {
 
@@ -61,3 +63,42 @@
 
 // }
 
+int main(void) {
+
+    FILE *fe, *ff;
+
+    int stri;
+
+    fe = fopen("Lambda Exposed.txt", "r");
+
+    ff = fopen("arq.txt", "w+");
+
+    if(fe == NULL || ff == NULL) {
+
+        perror("Error in opening the file");
+    }
+
+    do{
+
+        stri = fgetc(fe); 
+
+        if(feof(fe)) {
+            
+            break;
+        }
+
+        //printf("%c", stri);
+
+        fputc(stri, ff);
+
+    } while(1);
+
+    fclose(fe);
+
+    printf("\n");
+
+
+
+    return 0;
+
+}

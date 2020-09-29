@@ -1,0 +1,92 @@
+Function Exposed
+
+Cloud Conformity allows you to automate the auditing process of this resolution page. Register for a 14 day evaluation and check your compliance level for free!
+Function Exposed
+Risk level: High (not acceptable risk)
+Rule ID: Lambda-004
+
+Identify any publicly accessible AWS Lambda functions and update their access policy in order to protect against unauthorized users that are sending requests to invoke these functions.
+
+This rule can help you with the following compliance standards:
+
+    Payment Card Industry Data Security Standard (PCI DSS)
+    General Data Protection Regulation (GDPR)
+    APRA
+    MAS
+
+This rule can help you work with the AWS Well-Architected Framework
+
+This rule resolution is part of the Cloud Conformity Security & Compliance tool for AWS
+Security
+
+Allowing anonymous users to invoke your Amazon Lambda functions is considered bad practice and can lead to data exposure, data loss and unexpected charges on your AWS bill. To prevent any unauthorized invocation requests to your Lambda functions, restrict access only to trusted entities by implementing the appropriate permission policies.
+
+Audit
+
+To identify any exposed AWS lambda functions currently available within your AWS account, perform the following:
+Using AWS Console
+
+01 Login to the AWS Management Console.
+
+02 Navigate to Lambda dashboard at https://console.aws.amazon.com/lambda/.
+
+03 In the navigation panel, under AWS Lambda section, choose Functions.
+
+04 Choose the Lambda function that you want to examine then click on the function name to access its configuration page.
+
+05 Select the Triggers tab then click View function policy to expand the panel with the policy used to manage the function invocation permissions.
+
+06 Inside the Lambda function policy box, check the Principal element value. If the Principal element has one of the following values: "*" or { "AWS": "*" } and the function policy is not using any Condition clauses such as 'Condition': {'StringEquals': { 'AWS:SourceAccount': '<aws_account_number>' } } to filter the access, the selected Amazon Lambda function is exposed to anonymous access.
+
+07 Repeat steps no. 4 - 6 to verify the resource-based policy for other Amazon Lambda functions created within the current region for public access.
+
+08 Change the AWS region from the navigation bar and repeat the process for the other regions.
+Using AWS CLI
+
+01 Run list-functions command (OSX/Linux/UNIX) to list the names of all AWS Lambda functions currently available in the selected region:
+
+aws lambda list-functions
+	--region us-east-1
+	--query 'Functions[*].FunctionName'
+
+02 The command output should return an array with the requested Lambda function names:
+
+[
+    "SQSPoller",
+    "FetchS3ObjectMetadata"
+]
+
+03 Run get-policy command (OSX/Linux/UNIX) to return the access policy associated with the selected AWS Lambda function:
+
+aws lambda get-policy
+	--region us-east-1
+	--function-name SQSPoller
+
+04 The command output should return the Lambda function policy requested:
+
+{
+    "Version": "2012-10-17",
+    "Id": "default",
+    "Statement": [
+        {
+            "Sid": "lc-25aa93f6-3e17-4f0f-864c-b292e262d137",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "*"
+            },
+            "Action": "lambda:InvokeFunction",
+            "Resource": "arn:aws:lambda:us-east-1:198765432102:function:SQSPoller"
+        }
+    ]
+}
+
+
+Verify the value of the Principal element listed in the permission policy returned at the previous step. If the Principal element has one of the following values: "*" or { "AWS": "*" } and the function policy is not using any Condition clauses such as 'Condition': {'StringEquals': { 'AWS:SourceAccount': '<aws_account_number>' } } to filter the invocation access, the selected AWS Lambda function is exposed to everyone (i.e. allows anonymous access).
+
+05 Repeat step no. 3 and 4 to check the resource-based policy for other Amazon Lambda functions created within the current region for public access.
+
+06 Change the AWS region by updating the --region command parameter value and repeat steps no. 1 - 5 to perform the audit process for other regions.
+Remediation / Resolution
+
+To update the access policies (also known as resource-based policies) associated with your AWS Lambda functions in order to allow function invocation only from trusted AWS entities, perform the following:
+Note: Managing AWS Lambda function policies using AWS Management Console is not currently supported. To add or remove permissions for your Lambda functions, you can use the available API through AWS Command Line Interface (CLI). 
