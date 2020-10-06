@@ -87,3 +87,30 @@ Falha de segmentação (imagem do núcleo gravada) -> É um tipo de erro especif
 
 Visual C++ para compilar programas em C e C++ em ambientes Windows;
 
+Para executar somente a parte de Preprocessamento: 
+    gcc -E main.c  -o main.i
+
+Para definir uma MACRO como um argumento para o gcc pela a linha de comando:
+    gcc -D 'MOME_DA_MACRO' -E main.c -o main.i
+
+O compilador não inclui nenhum arquivo, ele espera que quem faça isso seja o Pre Processador.
+
+Igual ao compilador e o Pre Processor, o Compilador e o Linker são dois passos diferentes e eles não precisam serem combinados. Nós podemos falar para 
+o compilador compilar sem linkar. O compilador irá gerar um Object File (que e basicamente o resultado da compilação) 
+que ficará esperando a etapa de fazer o Link. Nós não podemos executar Object Files, nós precisamos que eles sejam linkados juntos para formares um executável.
+
+    - O linker só precisa dos Object Files para gerar o Executável;
+    - O Compilador precisa dos Source Files para gerar os Object Files;
+
+Isso quer dizer que você só precisa gerar os Object Files e fazer com que outra pessoa faça a parte do Linker, isso pode prevenir de você ter que ficar 
+mandando o seus Source Files por aí! 
+
+Se você compilar mais de um source File de uma vez, o compilador irá gerar um só Object File por Source File.
+
+gcc -c main. multiply.c
+
+Na etapa do Linker, ele irá ter que verificar se as referencias nos Object Files estão certas, resolver nomes e dependencias.  
+
+Para linkar dois ou mais Object Files no gcc:
+
+gcc main.o multiply.o -o main
