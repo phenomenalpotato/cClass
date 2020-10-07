@@ -114,3 +114,12 @@ Na etapa do Linker, ele irá ter que verificar se as referencias nos Object File
 Para linkar dois ou mais Object Files no gcc:
 
 gcc main.o multiply.o -o main
+
+Sem um inicializador, a variável tem um valor indefinido ou inprevissível. Isso pode ser aceitavel, mas pode ser uma caracteristica comum de varios tipos de bugs
+e se você se esquecer de inicializar a variavel e acidentalmente pode levar a vários tipos de exploits. Dessa maneira você pode evitar que dados não incializados 
+fiquem vagando pelo o seu programa. 
+
+
+Nós não precisamos depender de incializador padrão para variáveis estáticas, elas já são inicializadas com 0 pelo o compilador.
+
+Em C, o compilador espera que uma variável static seja inicializada com um valor CONSTANTE, e não um valor VARIÁVEL.
