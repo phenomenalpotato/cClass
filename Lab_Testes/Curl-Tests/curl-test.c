@@ -50,6 +50,8 @@ int main(void) {
 
     CURL *curl_handle; // You will do transfer using this. It's just a handle to transfers to operate 
 
+    /* The handle is the return code from a curl_easy_init or curl_easy_duphandle call */
+
     CURLcode res; // Declaring a variabel to be able to return the code from perform
 
     struct memory chunk;
@@ -60,9 +62,9 @@ int main(void) {
 
     curl_global_init(CURL_GLOBAL_ALL); // Before doing anything with the functions provided by the curl API, we need to initialize it. You will pass as an argument that say
                                       // What particular part to initialize or rather to avoid to initialize. CURL_GLOBAL_ALL is not thread safe. Make sure 
-                                      // You do this before you do anything else. This most is to initialize 3rd parties libraries.
+                                     // You do this before you do anything else. This most is to initialize 3rd parties libraries.
 
-    curl_handle = curl_easy_init(); // Creating the handle 
+    curl_handle = curl_easy_init(); // Start a libcurl easy session and Creating the handle 
     
     if(curl_handle) { // Let's check if has some problem, for example, if it's out of memory. It will return a NULL
 
@@ -72,6 +74,11 @@ int main(void) {
                                                                         // That's the only thing we ask here. 
                                                                         // We did not ask curl to put this output anywhere, so will send to stdout directly
                                                                         // By default.
+
+/*curl_easy_setopt is used to tell libcurl how to behave. By setting the appropriate options, the application can change libcurl's behavior */
+
+/* Options set with this function call are valid for all forthcoming trasfers performed using this hadle. The options are not in any way reset between
+trasfers, so if you want subsequent transfers with diferrent options, you must change them between the transfers. */
 
     curl_easy_setopt(curl_handle, CURLOPT_WRITEFUNCTION, writecallback); // Teling curl to use this write callback.
                                                                         // Now when it does this transfer for "https://example.com/" it will call this 
