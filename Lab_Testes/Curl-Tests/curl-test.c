@@ -127,37 +127,3 @@ trasfers, so if you want subsequent transfers with diferrent options, you must c
 
     return 0;
 }
-
-/*
-
-#include <stdio.h>
-#include <string.h>
-#include <curl/curl.h>
-
-int main(int argc, char *argv[]){
-
-  CURL *curl;
-  CURLcode res;
-  curl = curl_easy_init();
-  if(curl) {    
-    curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST, "POST");
-    curl_easy_setopt(curl, CURLOPT_URL, "https://events.sendpulse.com/events/id");
-    curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
-    curl_easy_setopt(curl, CURLOPT_DEFAULT_PROTOCOL, "https");
-    struct curl_slist *headers = NULL;
-    headers = curl_slist_append(headers, "Content-Type: text/plain");
-    curl_easy_setopt(curl, CURLOPT_HTTPHEADER, headers);
-        const char *data = "{
-\n  \"email\": \"alo@gmail.com\",
-\n  \"phone\": \"+123456789\",
-\n  \"user_id\": 121212,
-\n  \"event_date\": \"2019-12-29\"
-\n}";
-    curl_easy_setopt(curl, CURLOPT_POSTFIELDS, data);
-    res = curl_easy_perform(curl);
-  }
-  curl_easy_cleanup(curl);
-  return (int)res;
-}
-
-*/
