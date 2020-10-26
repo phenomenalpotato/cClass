@@ -21,7 +21,7 @@ int main(void) {
 
     printf("O resultado usando o ^ (OU exclusivo XOR) é: %d\n", a ^ b); // O ^ significa que é um XOR bit-a-bit
 
-    printf("O resultado usando o ~ (Negação) é: %d\n", ~c);
+    printf("O resultado usando o ~ (Negação) é: %d\n", ~c); // O ~ significa Negação bit-a-bit
 
     printf("O resultado usando o << (Shift Right) ou >> (Shift Left) é: %d\n", d << 1); // Empurrar os digitos para a esquerda (<<) ou
                                                                                         // Empurrar os digitos para a direita (>>)
