@@ -1,0 +1,29 @@
+Quando eu escrevo no terminal: 
+    - make
+O programa make irá procurar um arquivo chamado MakeFile, e vai executar as diretivas de compilação que estiverem escritas nesse arquivo.
+
+Quando essa mensagem aparece após executar o programa make: 
+    make: *** No targets. Stop 
+
+É pq não conseguiu encontrar o Alvo.
+
+Caso eu faça:
+
+all:
+    @echo "Olá"
+
+mensagem: 
+    @echo "Hello"
+
+E executar o programa make, ele só irá executar o alvo "all", pois esse alvo all tem prioridade sobre os outros alvos. Caso eu queira executar o alvo "mensagem"
+teria que executar o programa make:
+
+    make mensagem
+
+Uma forma de definir prioridade dos alvos é colocar eles como dependencia desse alvo "all". Por exemplo:
+
+    all: mensagem
+         @echo "Olá"
+
+mensagem:
+    @echo "Hello"

@@ -1,0 +1,15 @@
+MakeFile:
+    - É um arquivo que tem um conjunto de diretivas de compilação;
+    - O espaço padrão é a Tabulação: 
+        - Exe:
+                    |--| <- Esse espaço é chamado de Tabulação. Ou seja, uma tecla Tab
+            teste.x:    teste.f90
+
+    - Baseado em 'Regras' ('alvo', 'dependência' e 'ação');
+            
+            teste.x:    teste.f90
+                gfortan teste.f90 -o teste.x    <- Essa estrutura é uma regra. Onde eu tenho um alvo (teste.x), aquilo que vai ser produzido.
+                                                                               A minha dependência (teste.f90)
+                                                                               E ação que vai ser o comando de compilação (gfortan teste.f90 -o teste.x)
+
+Isso tudo é escrito no arquivo MakeFile e interpretado pelo o programa Make. 
