@@ -1,7 +1,7 @@
 O que é uma Estrutura? 
 
     - Basicamente, uma structure cria um data type que pode ser usado para agrupar itens possivelmente de outros tipos em um único tipo. 
-    - É uma coleção de variáveis(pode ser diferentes tipos) sobe um mesmo nome.
+    - É uma coleção ou sequencia de variáveis(pode ser diferentes tipos) sobe um mesmo nome.
     - Imagine que você queira criar um novo tipo de variável, é claro que os tipos base de variáveis não poderão ser desrespeitadas, serão todas 
     um tipo de variação delas. Usamos uma Estrutura normalmente quando tem mais de uma coisa dentro, mais de um tipo de variável primitivo. 
     - Ou suponha que você queira armazenar informações sobre uma pessoa: o nome dela/ dele, cidadania e salario. Você pode criar diferentes variaveis
