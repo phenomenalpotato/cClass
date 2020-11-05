@@ -1,0 +1,3 @@
+O clean no makefile é um alvo arbitrario que nós utilizamos. Esse alvo vai servir para remover alguns sub-produtos dessa nossa compilação. Por exemplo, pode sobrar 
+alguns arquivos .mod, .o ou outros que não são necessários durante a execução do programa ou você não quer que fique ocupando espaços. Então você pode 
+remove-los utilizando o make clean.

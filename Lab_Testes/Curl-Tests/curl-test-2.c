@@ -47,3 +47,33 @@ int main(void) {
 
     return 0;
 }
+
+/* CURL Error block code
+
+      char error[CURL_ERROR_SIZE];
+
+      curl_easy_setopt(curl, CURLOPT_ERRORBUFFER, error);
+
+      error[0] = 0;
+
+
+      if(res != CURLE_OK) {
+
+        size_t len = strlen(error);
+
+        fprintf(stderr, "\nlibcurl: (%d)", res);
+
+          if(len) {
+
+            fprintf(stderr, "%s%s", error, ((error[len - 1] != '\n') ? "\n" : ""));
+
+          }
+
+          else {
+
+              fprintf(stderr, "%s\n", curl_easy_strerror(res));
+          }
+
+      }
+
+*/

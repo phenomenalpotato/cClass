@@ -1,0 +1,8 @@
+3 Perguntas Makefile:
+
+    - Alvo: O que será produzido?
+    - Dependência: Do que eu preciso para produzir o Alvo?
+    - Comando: Como, a partir da Dependência, vou produzir o Alvo?
+
+    alvo:   Dependência
+        comando
