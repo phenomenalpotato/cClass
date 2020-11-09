@@ -1,0 +1,6 @@
+Mascaras são simbolos que representam valores:
+
+$<  # A primeira dependencia
+$@  # O Alvo
+*.o # Qualquer .o no comando. Só pode ser utilizada na parte dos comandos. Não posso usar para descrever alvo e dependencias
+%.o # Qualquer .o no alvo ou dependencia. Tem o mesmo significado que o *.
