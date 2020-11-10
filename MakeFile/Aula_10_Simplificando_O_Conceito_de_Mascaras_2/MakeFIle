@@ -1,0 +1,21 @@
+DEP = funcoes.o parametros_lib.o teste.o
+
+CC = gfortran
+
+all:	${DEP} teste.x
+
+#A regra abaixo traduzida
+
+# teste.x:	teste.o
+	# gfortran *.o -o teste.x
+
+%.x: %.f90
+	${CC} -c $<
+
+# A regra abaixo traduzida
+
+# arquivo.o:	arquivo.f90
+	# gfortran -c arquivo.f90
+
+%.o:	%.f90
+	${CC} -c $<
