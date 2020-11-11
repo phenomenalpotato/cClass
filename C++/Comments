@@ -1,0 +1,10 @@
+A flag -lstdc++ simplesmente indica que essa lib deve ser procurada no momento do link. 
+
+    gcc teste.cpp -lstdc++ -o teste
+
+Se você não especificar um retorno da função int main() se assumirá que o retorno dela é 0.
+
+Um Entry Point de executável não precisa ser necessariamente a função main()
+
+No final das contas, é escolha da compilador de te contar o quão grande um Data Type será.
+
