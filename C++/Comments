@@ -8,3 +8,8 @@ Um Entry Point de executável não precisa ser necessariamente a função main()
 
 No final das contas, é escolha da compilador de te contar o quão grande um Data Type será.
 
+Debug = Significa remover bugs do nosso código. E para remover um bug do nosso programa, temos que diagnosticar o que há de errado no nosso programa.
+
+Breakpoint = É um ponto no nosso programa na qual um o debugger irá "quebrar" a palavra "quebrar" aqui significa Pausar. O que acontece aqui é que 
+podemos colocar um BreakPoint em qualquer linha de código no nosso programa. E quando a execução chegar naquela linha o programa irá Pausar. E com isso
+poderemos olhar o estado desse programa naquele momento.
