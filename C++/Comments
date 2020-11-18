@@ -13,3 +13,11 @@ Debug = Significa remover bugs do nosso código. E para remover um bug do nosso 
 Breakpoint = É um ponto no nosso programa na qual um o debugger irá "quebrar" a palavra "quebrar" aqui significa Pausar. O que acontece aqui é que 
 podemos colocar um BreakPoint em qualquer linha de código no nosso programa. E quando a execução chegar naquela linha o programa irá Pausar. E com isso
 poderemos olhar o estado desse programa naquele momento.
+
+Nós temos 3 principais Control Flow Statements:
+
+    - Continue: Só pode ser usado dentro de um loop. Basicamente vá até o pŕoximo iteration (i++) desse loop, se houver algum. Caso ao contrário, irá encerrar o loop;
+
+    - Break: Primariamente usado em loops, mas também pode ser usado em switch Statements. Basicamente diz "Saia do loop".
+
+    - Return: Basicamente, irá sair interamente da sua função. Caso esteja em uma função, e você tiver um return keyword nela, você irá sair da função;
