@@ -1,4 +1,4 @@
-BIN = structvsclass
+BIN = execlasse
 
 all:	${BIN} execute
 

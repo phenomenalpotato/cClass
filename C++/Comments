@@ -21,3 +21,18 @@ Nós temos 3 principais Control Flow Statements:
     - Break: Primariamente usado em loops, mas também pode ser usado em switch Statements. Basicamente diz "Saia do loop".
 
     - Return: Basicamente, irá sair interamente da sua função. Caso esteja em uma função, e você tiver um return keyword nela, você irá sair da função;
+
+Quando você declara algo como Static fora de uma classe, ele será somente visivel interamente para essa Translate Unite. 
+
+E no caso de uma variável ou Classe Static, irá compartilhar memória para todas as instancias da Classe. O que significa que todas as instancias que você criou
+daquela Classe ou Struct só terá uma instancia dessa Classe ou variável Static. 
+
+Para gerar um Object File:
+
+    g++ -c main.cpp static.cpp 
+
+Para linkar os dois:
+
+    g++ static.o main.o -o main
+
+Metodos Estaticos não podem acessar variaveis não estáticas/ variaveis automaticas.
