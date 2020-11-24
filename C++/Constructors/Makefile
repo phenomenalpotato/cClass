@@ -1,6 +1,6 @@
-BIN = log
+BIN = constructors
 
 all:	${BIN} execute
 
 execute:
-	./$(BIN)
+	./${BIN}

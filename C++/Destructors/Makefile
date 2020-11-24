@@ -1,6 +1,6 @@
-BIN = log
+BIN = destructors
 
 all:	${BIN} execute
 
 execute:
-	./$(BIN)
+	./${BIN}

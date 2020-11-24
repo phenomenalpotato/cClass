@@ -1,6 +1,6 @@
-BIN = log
+BIN = enums
 
 all:	${BIN} execute
 
 execute:
-	./$(BIN)
+	./${BIN}
