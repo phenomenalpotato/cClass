@@ -1,6 +1,6 @@
-BIN = destructors
+BIN = Inheritance
 
 all:	${BIN} execute
 
 execute:
-	@./${BIN}
+	./${BIN}
