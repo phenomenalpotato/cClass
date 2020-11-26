@@ -10,11 +10,21 @@
 // Virtual Functions, tem o seu custo em Run Time. Primeiro, elas precisam de memória adicional para armazenarmos a VTable. E segundo, toda a vez 
 // Que chamamos uma Virtual Function, nós temos que percorrer essa VTable para determinarmos qual função mapear realmente.
 
+// Uma classe só é ABSTRATA SOMENTE SE CONTER PELO MENOS UMA VIRTUAL FUNTION/ ABSTRACT METHOD! 
+
+// Em outras linguagens como Java existe um keyword que deixa isso mais explicito, ao inves somente definir uma Classe como abstrata somente por ter uma 
+// Virtual Function como é o caso de C++. Ou seja, você não declara as Classes ou metodos explicitamente com uma Keyword. A presença de uma Virtual Function/
+// Vitual Method é o que irá fazer dela Abstrata.
+
 class A {
 
 public:
 
     virtual std::string GetName() { // Função/ Metodo que terá um retorno do tipo String. Marcando essa função como Virtual.
+
+        int i = 10;
+
+        printf("%d\n", i);
 
         return "Entity";
 
@@ -31,7 +41,8 @@ private:
 
 public:
 
-    B(const std::string& name) : m_name(name) {
+    B(const std::string& name): m_name(name)   {
+
 
     }
 

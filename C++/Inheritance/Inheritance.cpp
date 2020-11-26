@@ -11,7 +11,7 @@
 // Isso seria como criar um Template Base (Classe Base) que outras Classes irão Herdar! É uma maneira para estendermos as funcionalidades de uma Classe
 // Já existe e adicionarmos mais funcionalidades
 
-// Poliformismo, é basicamente a ideia de ter multiplos Tipos para um único Tipo. 
+// Polimorfismo, é basicamente a ideia de ter multiplos Tipos para um único Tipo. 
 // Por exemplo, Player não é somente o Tipo Player (Player jogador) mas também é uma Entidade (class Player). Isso significa, que podemos utilizar um 
 // Player em qualquer lugar que queiramos usar uma Entidade. Isso faz sentido, pois, a Classe Player tem as mesmas coisas que a Classe Entity e ainda mais um
 // Pouco.
