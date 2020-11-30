@@ -77,6 +77,8 @@ int main(void) {
 
     delete[] pont; // Já que usamos o new como um Array, temos que usar o delete com []
 
+    // Se você não usar o Keyword New não é para usar a Keyword delete
+
     // Enquanto no caso de um nós criarmos um Array, ele será alocado na Stack e durará somente enquanto nós atingirmos o [] e o seu escopo terminar
 
     int exe[5];

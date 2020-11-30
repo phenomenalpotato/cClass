@@ -20,7 +20,7 @@ int main(void) {
 
     int a = 5;
 
-    int& ref = a; // Isso daqui é basicamente um "Alias". Essa "variável" só existe no nosso Source Code, se vc compilar esse código agora, você não terá 
+    int& ref = a; // Isso daqui é basicamente um "Alias". Essa "variável" só existe no nosso Source Code, se você compilar esse código agora, você não terá 
                  // 2 variáveis a e ref, você só terá a variável int a
 
     // Uma vez que você declara uma Reference, você precisa atribuir a algo 
