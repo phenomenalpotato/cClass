@@ -1,6 +1,7 @@
 BIN = objeto
+BIN2 = exe
 
-all:	${BIN} execute
+all:	${BIN2} execute
 
 execute:
-	./${BIN}
+	./${BIN2}
