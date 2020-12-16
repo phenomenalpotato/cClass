@@ -1,7 +1,8 @@
 BIN = objeto
 BIN2 = exe
+BIN3 = exemplo_pratico_com_objetos
 
-all:	${BIN2} execute
+all:	${BIN3} execute
 
 execute:
-	./${BIN2}
+	./${BIN3}
