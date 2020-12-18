@@ -1,6 +1,8 @@
 BIN = relacionamento_entre_classes
 
-all:	${BIN} execute
+BIN2 = relacionamento_de_agregacao
+
+all:	${BIN2} execute
 
 execute:
-	./${BIN}
+	./${BIN2}
