@@ -77,7 +77,7 @@ int main(void) {
 
 /*curl_easy_setopt is used to tell libcurl how to behave. By setting the appropriate options, the application can change libcurl's behavior */
 
-/* Options set with this function call are valid for all forthcoming trasfers performed using this hadle. The options are not in any way reset between
+/* Options set with this function call are valid for all forthcoming trasfers performed using this handle. The options are not in any way reset between
 trasfers, so if you want subsequent transfers with diferrent options, you must change them between the transfers. */
 
     curl_easy_setopt(curl_handle, CURLOPT_WRITEFUNCTION, writecallback); // Teling curl to use this write callback.
@@ -112,7 +112,7 @@ trasfers, so if you want subsequent transfers with diferrent options, you must c
 
                 if(messageF) {
 
-                    printf("Found 'message' at the file %d\n", (messageF - chunk.memory));
+                    printf("Found 'message' at the file %ld\n", (messageF - chunk.memory));
                 }
                 
             }

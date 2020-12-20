@@ -1,0 +1,8 @@
+Vantagens de uma Linguagem Orientada a Objeto:
+
+    - Confiável: O isolamento entre as partes gera software seguro. Ao Alterar uma parte, nenhuma é alterada;
+    - Oportuno: Ao dividir tudo em partes, várias delas podem ser desenvolvidas em paralelo;
+    - Manutenível: Atualizar um software é mais fácil. Uma pequena modificação vai beneficiar todas as partes que usarem o objeto;
+    - Extensível: O software não é estático. Ele deve crscer para permanecer útil;
+    - Reutilizável: Podemos usar um sistema que criamos em outro sistema futuro;
+    - Natural: Mais fácil de entender. Você se preocupa mais na funcionalidade do que nos detalhes de implementação;

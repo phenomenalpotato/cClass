@@ -1,0 +1,5 @@
+programa:	./src/programa.c programa.o
+	gcc programa.o ./src/programa.c -o ./bin/programa 
+
+programa.o: ./src/programa.c
+	gcc ./src/modulo.c

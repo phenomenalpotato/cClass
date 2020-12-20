@@ -1,0 +1,38 @@
+A flag -lstdc++ simplesmente indica que essa lib deve ser procurada no momento do link. 
+
+    gcc teste.cpp -lstdc++ -o teste
+
+Se você não especificar um retorno da função int main() se assumirá que o retorno dela é 0.
+
+Um Entry Point de executável não precisa ser necessariamente a função main()
+
+No final das contas, é escolha da compilador de te contar o quão grande um Data Type será.
+
+Debug = Significa remover bugs do nosso código. E para remover um bug do nosso programa, temos que diagnosticar o que há de errado no nosso programa.
+
+Breakpoint = É um ponto no nosso programa na qual um o debugger irá "quebrar" a palavra "quebrar" aqui significa Pausar. O que acontece aqui é que 
+podemos colocar um BreakPoint em qualquer linha de código no nosso programa. E quando a execução chegar naquela linha o programa irá Pausar. E com isso
+poderemos olhar o estado desse programa naquele momento.
+
+Nós temos 3 principais Control Flow Statements:
+
+    - Continue: Só pode ser usado dentro de um loop. Basicamente vá até o pŕoximo iteration (i++) desse loop, se houver algum. Caso ao contrário, irá encerrar o loop;
+
+    - Break: Primariamente usado em loops, mas também pode ser usado em switch Statements. Basicamente diz "Saia do loop".
+
+    - Return: Basicamente, irá sair interamente da sua função. Caso esteja em uma função, e você tiver um return keyword nela, você irá sair da função;
+
+Quando você declara algo como Static fora de uma classe, ele será somente visivel interamente para essa Translate Unite. 
+
+E no caso de uma variável ou Classe Static, irá compartilhar memória para todas as instancias da Classe. O que significa que todas as instancias que você criou
+daquela Classe ou Struct só terá uma instancia dessa Classe ou variável Static. 
+
+Para gerar um Object File:
+
+    g++ -c main.cpp static.cpp 
+
+Para linkar os dois:
+
+    g++ static.o main.o -o main
+
+Metodos Estaticos não podem acessar variaveis não estáticas/ variaveis automaticas.
