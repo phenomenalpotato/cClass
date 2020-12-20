@@ -26,7 +26,7 @@ public:
 
     void setIdade(int idad) {
 
-        idade = idade;
+        idade = idad;
     }
 
     int getIdade(void) {

@@ -97,7 +97,7 @@ public:
 
     void setCorEscama(string corEscam) {
 
-        corEscama = corEscama;
+        corEscama = corEscam;
     }
 
     string getCorEscama(void) {
