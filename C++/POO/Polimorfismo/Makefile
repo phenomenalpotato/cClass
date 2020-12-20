@@ -1,6 +1,10 @@
 BIN = polimorfismo
 
-all:	${BIN} execute
+BIN2 = polimorfismo2
+
+BIN3 = polimorfismo3
+
+all:	${BIN3} execute
 
 execute:
-	./${BIN}
+	./${BIN3}

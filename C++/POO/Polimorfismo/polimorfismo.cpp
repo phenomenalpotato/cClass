@@ -2,6 +2,8 @@
 
 using namespace std; // Com isso, posso tirar a declaração de que estou acessando o namespace std. Por exemplo, std::string só fica string
 
+// Polimorfismo = Poli == Muitas & Morfo == Formas
+
 // O Polimorfismo, permite que um mesmo nome represente vários compartamentos diferentes. Por exemplo, um mesmo metodo pode ser utilizado de diferentes maneiras. 
 // Todo o metodo tem uma assinatura, basicamente a Assinatura do Metodo consiste em as Quantidades e os tipod de Parâmetros. 
 
@@ -25,14 +27,14 @@ using namespace std; // Com isso, posso tirar a declaração de que estou acessa
 
 Existem 4 tipos de Polimorfismos, os 2 mais usados são: 
 
-Polimorfismo de Sobrebosição, é dos Polimorfismos mais utilizados. Acontece quando substituimos um metodo de uma SupeClasse na sua Sub Classe, usando a 
-mesma assinatura.
+Polimorfismo de Sobrebosição, é dos Polimorfismos mais utilizados. Acontece quando substituimos a implementação de um metodo de uma SupeClasse na sua Sub Classe,
+usando a mesma assinatura. Acontece quando substituimos um Método de uma Super Classe na sua Sub Classe, usando a mesma assinatura.
 
-Polimorfismo de Sobrecarga.
+Polimorfismo de Sobrecarga, é você ter o mesmo Método com o mesmo Nome, uma Implementação diferente na mesma Classe, mas só que com Assinaturas diferentes.
 
 */
 
-// Uma Classe é abstrata se tiver pelo menos uma Virtual Function
+// Uma Classe é abstrata se tiver pelo menos uma Virtual Function Pura
 
 class Cachorro {
 
