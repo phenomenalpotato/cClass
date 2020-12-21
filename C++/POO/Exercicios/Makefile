@@ -1,6 +1,8 @@
 BIN = execercio_pratico
 
-all:	${BIN} execute
+BIN2 = execercio_pratico2
+
+all:	${BIN2} execute
 
 execute:
-	./${BIN}
+	./${BIN2}
