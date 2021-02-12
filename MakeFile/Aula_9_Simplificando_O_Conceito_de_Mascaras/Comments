@@ -1,0 +1,5 @@
+# Esse alvo irá ver se existe um arquivo no diretório atual com o nome de one. Se tiver executará o comando echo. 
+Se não tiver dará um erro:  make: *** No rule to make target 'one', needed by 'test'.  Pare.
+
+test: one
+	echo "MakeFile!!"

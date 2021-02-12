@@ -1,0 +1,7 @@
+Posso atribuir valor a uma variavel dentro de um arquivo Makefile e utilizar:
+
+    SRC=./src
+    OBJ=./obj
+
+    $(OBJ)/modulo.o:    $(SRC)/modulo.c
+        gcc $(SRC)/modulo.c -o $(OBJ)/modulo
