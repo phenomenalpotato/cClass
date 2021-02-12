@@ -36,3 +36,8 @@ Para linkar os dois:
     g++ static.o main.o -o main
 
 Metodos Estaticos não podem acessar variaveis não estáticas/ variaveis automaticas.
+
+Templates é basicamente você passar um data type (ou um non-data type como valor constante) para que não precisamos fazer um mesmo código 2 vezes.
+Templates são iguais Macro, eles são expandidos durante a compilação. A ideia é simples, o código fonte deve conter somente funções/ Classes, mas 
+o código compilado pode conter a mesma função/ Classe várias vezes. Templates nos permite em escrever códigos genericos, por exemplo, criarmos uma ou mais 
+funções/ Classes Base e elas funcionarem/ se expandirem com vários data Types usando templates.

@@ -32,7 +32,7 @@
 
    /*
    
-    Aqui nós podemos ver que mais de uma variável estão sendo usadas sem reprotar nenhum erro. Isso é pq eles estão declaradas em um escopo e Namespace diferente.
+    Aqui nós podemos ver que mais de uma variável estão sendo usadas sem reportar nenhum erro. Isso é pq eles estão declaradas em um escopo e Namespace diferente.
    
    */
 
@@ -49,12 +49,12 @@
 
                                                                         Definição e Criação:
 
-    Namespaces nos permite agrupar Entidades Nomeadas que ao contrario teriam Escopo Global em escopos mais estreitos, dando a eles Escopos de Namespaces (namespaces scope).
+    Namespaces nos permitem agrupar Entidades Nomeadas que ao contrario teriam Escopo Global em escopos mais estreitos, dando a eles Escopos de Namespaces (namespaces scope).
 
         - Namespace é uma feature adicionada no C++ e não é presente em C;
         - Um Namespace é uma região declarativa que provem um Escopo para os indentificadores (Nomes dos tipos, funções, variáveis etc) dentro dele.
           Namespaces são usados para organizar o código em grupos logicos e prevenir colisões de nomes que podem ocorrer especialmente quando o seu código
-          base incleu várias bibliotecas;
+          base inclue várias bibliotecas;
         - Múltiplos blocos de Namespaces com o mesmo nome são PERMITIDOS. Todas as declarações dentro destes blocos são declaradas no nome do Escopo; 
 
         - A definição de um Namespace começa com a Keyword namespace seguida pelo o nome da Namespace:

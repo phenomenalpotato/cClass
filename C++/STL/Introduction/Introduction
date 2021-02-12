@@ -1,0 +1,18 @@
+1. STL: Standard Template Library
+
+2. Consiste de três componentes:
+    a. Container
+    b. Iterator
+    c. Algorithm
+
+Vamos supor que você tenha um dado 1234, o que você quer fazer com esse dado? Você quer armazenalo para fazer alguma operação, certo? Então para armazenar o dado, 
+você tem o Container. Se você não armazenar o seu dado, você não poderá processar o seu dado. Então, você tem Container para isso. 
+Uma vez que você armazenou esse dado, vamos supor que em um array ou em uma lista, eles dois fazem parte do conceito de Container. 
+Pq você está armazenando o seu dados nessa maneira.
+
+Um Iterator é algo que ajuda a mover nesse container. Basicamente, significa uma forma, caso queira, de andar para frente e para tras, por exemplo, em um Container.
+Um Iterator irá te ajudar a mover-se em um Container.
+
+O Algorithm irá servir caso queira aplicar algum Algorithm disponivel na STL.
+
+Basicamente, uma Library precisa desses 3 componentes: Container, Iterator, Algorithm.

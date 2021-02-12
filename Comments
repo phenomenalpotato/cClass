@@ -107,7 +107,7 @@ mandando o seus Source Files por aí!
 
 Se você compilar mais de um source File de uma vez, o compilador irá gerar um só Object File por Source File.
 
-gcc -c main. multiply.c
+gcc -c main.c multiply.c
 
 Na etapa do Linker, ele irá ter que verificar se as referencias nos Object Files estão certas, resolver nomes e dependencias.  
 
